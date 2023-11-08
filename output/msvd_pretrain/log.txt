@@ -1,0 +1,299 @@
+[2023-11-08 17:03:51,038 tvr 120 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:03:51,038 tvr 127 INFO]: Effective parameters:
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< batch_size: 128
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< d_temp: 100
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< datatype: msvd
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< device: cuda:0
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< distributed: 0
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< do_eval: 0
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< do_train: 1
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< epochs: 5
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< init_model: None
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< interaction: wti
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< local_rank: 0
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< max_frames: 12
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< max_words: 32
+[2023-11-08 17:03:51,038 tvr 129 INFO]:   <<< moment: 0.99
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< n_display: 50
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< neg: 0
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< num: 127
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< seed: 42
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< sigma_small: True
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< stage: discrimination
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< temp: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< workers: 8
+[2023-11-08 17:03:51,039 tvr 129 INFO]:   <<< world_size: 1
+[2023-11-08 17:04:00,027 tvr 169 INFO]: ***** Running test *****
+[2023-11-08 17:04:00,027 tvr 170 INFO]:   Num examples = 27763
+[2023-11-08 17:04:00,027 tvr 171 INFO]:   Batch size = 128
+[2023-11-08 17:04:00,027 tvr 172 INFO]:   Num steps = 217
+[2023-11-08 17:04:00,027 tvr 173 INFO]: ***** Running val *****
+[2023-11-08 17:04:00,027 tvr 174 INFO]:   Num examples = 27763
+[2023-11-08 17:04:00,327 tvr 185 INFO]: ***** Running training *****
+[2023-11-08 17:04:00,327 tvr 186 INFO]:   Num examples = 48774
+[2023-11-08 17:04:00,327 tvr 187 INFO]:   Batch size = 128
+[2023-11-08 17:04:00,327 tvr 188 INFO]:   Num steps = 1905
+[2023-11-08 17:05:15,131 tvr 120 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:05:15,131 tvr 127 INFO]: Effective parameters:
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< batch_size: 128
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< d_temp: 100
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< datatype: msvd
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< device: cuda:0
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< distributed: 0
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< do_eval: 0
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< do_train: 1
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< epochs: 5
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< init_model: None
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< interaction: wti
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< local_rank: 0
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< max_frames: 12
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< max_words: 32
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< moment: 0.99
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< n_display: 50
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< neg: 0
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< num: 127
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< seed: 42
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< sigma_small: True
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< stage: discrimination
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:05:15,131 tvr 129 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< temp: 1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< workers: 8
+[2023-11-08 17:05:15,132 tvr 129 INFO]:   <<< world_size: 1
+[2023-11-08 17:05:24,183 tvr 169 INFO]: ***** Running test *****
+[2023-11-08 17:05:24,183 tvr 170 INFO]:   Num examples = 27763
+[2023-11-08 17:05:24,183 tvr 171 INFO]:   Batch size = 128
+[2023-11-08 17:05:24,183 tvr 172 INFO]:   Num steps = 217
+[2023-11-08 17:05:24,183 tvr 173 INFO]: ***** Running val *****
+[2023-11-08 17:05:24,183 tvr 174 INFO]:   Num examples = 27763
+[2023-11-08 17:05:24,484 tvr 185 INFO]: ***** Running training *****
+[2023-11-08 17:05:24,484 tvr 186 INFO]:   Num examples = 48774
+[2023-11-08 17:05:24,484 tvr 187 INFO]:   Batch size = 128
+[2023-11-08 17:05:24,484 tvr 188 INFO]:   Num steps = 1905
+[2023-11-08 17:05:41,968 tvr 330 INFO]: eta: 9:14:03  epoch: 0/5  iteration: 1/1905  time: 17.4598 (17.4598)  data: 12.0697 (12.0697)  loss: 2.2090 (2.2090)  discrimination_loss: 2.2090 (2.2090)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000525  logit_scale: 100.00max mem: 35273
+[2023-11-08 17:05:41,975 tvr 504 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 17:05:41,975 tvr 505 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 17:05:41,977 tvr 518 INFO]: [start] extract text+video feature
+[2023-11-08 17:07:15,720 tvr 120 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:07:15,721 tvr 127 INFO]: Effective parameters:
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< batch_size: 128
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< d_temp: 100
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< datatype: msvd
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< device: cuda:0
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< distributed: 0
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< do_eval: 0
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< do_train: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< epochs: 10
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< init_model: None
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< interaction: wti
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< local_rank: 0
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< max_frames: 12
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< max_words: 32
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< moment: 0.99
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< n_display: 50
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< neg: 0
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< num: 127
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< seed: 42
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< sigma_small: True
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< stage: discrimination
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< temp: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:07:15,721 tvr 129 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:07:15,722 tvr 129 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:07:15,722 tvr 129 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:07:15,722 tvr 129 INFO]:   <<< workers: 8
+[2023-11-08 17:07:15,722 tvr 129 INFO]:   <<< world_size: 1
+[2023-11-08 17:07:24,656 tvr 169 INFO]: ***** Running test *****
+[2023-11-08 17:07:24,656 tvr 170 INFO]:   Num examples = 27763
+[2023-11-08 17:07:24,656 tvr 171 INFO]:   Batch size = 128
+[2023-11-08 17:07:24,657 tvr 172 INFO]:   Num steps = 217
+[2023-11-08 17:07:24,657 tvr 173 INFO]: ***** Running val *****
+[2023-11-08 17:07:24,657 tvr 174 INFO]:   Num examples = 27763
+[2023-11-08 17:07:24,955 tvr 185 INFO]: ***** Running training *****
+[2023-11-08 17:07:24,955 tvr 186 INFO]:   Num examples = 48774
+[2023-11-08 17:07:24,955 tvr 187 INFO]:   Batch size = 128
+[2023-11-08 17:07:24,956 tvr 188 INFO]:   Num steps = 3810
+[2023-11-08 17:07:37,868 tvr 330 INFO]: eta: 13:38:46  epoch: 0/10  iteration: 1/3810  time: 12.8974 (12.8974)  data: 8.1435 (8.1435)  loss: 2.2090 (2.2090)  discrimination_loss: 2.2090 (2.2090)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000525  logit_scale: 100.00max mem: 35273
+[2023-11-08 17:07:37,875 tvr 504 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 17:07:37,875 tvr 505 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 17:07:37,877 tvr 518 INFO]: [start] extract text+video feature
+[2023-11-08 17:08:42,106 tvr 120 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:08:42,107 tvr 127 INFO]: Effective parameters:
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< batch_size: 128
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< d_temp: 100
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< datatype: msvd
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< device: cuda:0
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< distributed: 0
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< do_eval: 0
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< do_train: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< epochs: 10
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< init_model: None
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< interaction: wti
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< local_rank: 0
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< max_frames: 12
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< max_words: 32
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< moment: 0.99
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< n_display: 50
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< neg: 0
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< num: 127
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< seed: 42
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< sigma_small: True
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< stage: discrimination
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< temp: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:08:42,107 tvr 129 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:08:42,108 tvr 129 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:08:42,108 tvr 129 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:08:42,108 tvr 129 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:08:42,108 tvr 129 INFO]:   <<< workers: 8
+[2023-11-08 17:08:42,108 tvr 129 INFO]:   <<< world_size: 1
+[2023-11-08 17:08:51,292 tvr 169 INFO]: ***** Running test *****
+[2023-11-08 17:08:51,292 tvr 170 INFO]:   Num examples = 27763
+[2023-11-08 17:08:51,292 tvr 171 INFO]:   Batch size = 128
+[2023-11-08 17:08:51,292 tvr 172 INFO]:   Num steps = 217
+[2023-11-08 17:08:51,292 tvr 173 INFO]: ***** Running val *****
+[2023-11-08 17:08:51,292 tvr 174 INFO]:   Num examples = 27763
+[2023-11-08 17:08:51,599 tvr 185 INFO]: ***** Running training *****
+[2023-11-08 17:08:51,599 tvr 186 INFO]:   Num examples = 48774
+[2023-11-08 17:08:51,599 tvr 187 INFO]:   Batch size = 128
+[2023-11-08 17:08:51,599 tvr 188 INFO]:   Num steps = 3810
+[2023-11-08 17:09:04,482 tvr 330 INFO]: eta: 13:36:51  epoch: 0/10  iteration: 1/3810  time: 12.8673 (12.8673)  data: 8.2738 (8.2738)  loss: 2.2090 (2.2090)  discrimination_loss: 2.2090 (2.2090)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000525  logit_scale: 100.00max mem: 35273
+[2023-11-08 17:09:04,489 tvr 504 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 17:09:04,490 tvr 505 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 17:09:04,491 tvr 518 INFO]: [start] extract text+video feature
+[2023-11-08 17:20:47,923 tvr 122 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:20:47,923 tvr 129 INFO]: Effective parameters:
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< batch_size: 128
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< d_temp: 100
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< datatype: msvd
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< device: cuda:0
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< distributed: 0
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< do_eval: 0
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< do_train: 1
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< epochs: 10
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< init_model: None
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< interaction: wti
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< local_rank: 0
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< max_frames: 12
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< max_words: 32
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< moment: 0.99
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< n_display: 50
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< neg: 0
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< num: 127
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< seed: 42
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< sigma_small: True
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< stage: discrimination
+[2023-11-08 17:20:47,923 tvr 131 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< temp: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< workers: 8
+[2023-11-08 17:20:47,924 tvr 131 INFO]:   <<< world_size: 1
+[2023-11-08 17:21:01,867 tvr 171 INFO]: ***** Running test *****
+[2023-11-08 17:21:01,868 tvr 172 INFO]:   Num examples = 27763
+[2023-11-08 17:21:01,868 tvr 173 INFO]:   Batch size = 128
+[2023-11-08 17:21:01,868 tvr 174 INFO]:   Num steps = 217
+[2023-11-08 17:21:01,868 tvr 175 INFO]: ***** Running val *****
+[2023-11-08 17:21:01,868 tvr 176 INFO]:   Num examples = 27763
+[2023-11-08 17:21:02,092 tvr 187 INFO]: ***** Running training *****
+[2023-11-08 17:21:02,092 tvr 188 INFO]:   Num examples = 48774
+[2023-11-08 17:21:02,092 tvr 189 INFO]:   Batch size = 128
+[2023-11-08 17:21:02,092 tvr 190 INFO]:   Num steps = 3810
+[2023-11-08 17:21:14,597 tvr 336 INFO]: eta: 13:12:50  epoch: 0/10  iteration: 1/3810  time: 12.4890 (12.4890)  data: 8.3994 (8.3994)  loss: 2.2090 (2.2090)  discrimination_loss: 2.2090 (2.2090)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000525  logit_scale: 100.00max mem: 35273
+[2023-11-08 17:21:14,602 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 17:21:14,602 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 17:21:14,604 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 17:30:16,777 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 17:30:16,777 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 17:30:16,777 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 17:30:16,777 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 17:30:16,780 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 17:30:28,236 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 17:30:28,237 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 17:30:28,237 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670

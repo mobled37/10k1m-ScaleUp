@@ -608,7 +608,7 @@ def eval_epoch(args, model, test_dataloader, device, diffusion, type=""):
         logger.info("before reshape, sim matrix size: {} x {}".format(sim_matrix.shape[0], sim_matrix.shape[1]))
         cut_off_points2len_ = [itm + 1 for itm in cut_off_points_]
         max_length = max([e_ - s_ for s_, e_ in zip([0] + cut_off_points2len_[:-1], cut_off_points2len_)])
-        new_t2v_matrix_new, new_v2t_matrix_new = [], [], []
+        new_t2v_matrix_new, new_v2t_matrix_new = [], []
         for s_, e_ in zip([0] + cut_off_points2len_[:-1], cut_off_points2len_):
             new_t2v_matrix_new.append(np.concatenate((new_t2v_matrix[s_:e_],
                                                   np.full((max_length - e_ + s_, sim_matrix.shape[1]), -np.inf)),

@@ -6,6 +6,54 @@ from .dataloader_didemo_retrieval import DiDeMoDataset
 from .dataloader_lsmdc_retrieval import LsmdcDataset
 from .dataloader_msvd_retrieval import MsvdDataset
 
+from .dataloader_custom_retrieval import CustomDataset
+
+def dataloader_custom_train(args, tokenizer):
+    custom_dataset = CustomDataset(
+        subset="train",
+        anno_path=args.anno_path,
+        video_path=args.video_path,
+        max_words=args.max_words,
+        tokenizer=tokenizer,
+        max_frames=args.max_frames,
+        video_framerate=args.video_framerate,
+        config=args
+    )
+
+    train_sampler = torch.utils.data.distributed.DistributedSampler(custom_dataset)
+    dataloader = DataLoader(
+        custom_dataset,
+        batch_size=args.batch_size // args.world_size,
+        num_workers=args.workers,
+        pin_memory=False,
+        shuffle=(train_sampler is None),
+        sampler=train_sampler,
+        drop_last=True,
+    )
+
+    return dataloader, len(custom_dataset), train_sampler
+
+
+def dataloader_custom_test(args, tokenizer, subset="test"):
+    custom_testset = CustomDataset(
+        subset=subset,
+        anno_path=args.anno_path,
+        video_path=args.video_path,
+        max_words=args.max_words,
+        tokenizer=tokenizer,
+        max_frames=args.max_frames,
+        video_framerate=args.video_framerate,
+        config=args
+    )
+
+    dataloader = DataLoader(
+        custom_testset,
+        batch_size=args.batch_size_val,
+        num_workers=args.workers,
+        shuffle=False,
+        drop_last=False,
+    )
+    return dataloader, len(custom_testset)
 
 def dataloader_msrvtt_train(args, tokenizer):
     msrvtt_dataset = MSRVTTDataset(

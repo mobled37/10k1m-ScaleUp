@@ -297,3 +297,1452 @@
 [2023-11-08 17:30:28,236 tvr 602 INFO]: [end] calculate the similarity
 [2023-11-08 17:30:28,237 tvr 605 INFO]: [start] compute_metrics
 [2023-11-08 17:30:28,237 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 17:56:16,545 tvr 122 INFO]: local_rank: 0 world_size: 1
+[2023-11-08 17:56:16,545 tvr 129 INFO]: Effective parameters:
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< agg_module: seqTransf
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< anno_path: /data/kylee/projects/HBI/MSVD/msvd_data
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< base_encoder: ViT-B/32
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< batch_size: 128
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< batch_size_val: 128
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< coef_lr: 0.001
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< d_temp: 100
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< datatype: msvd
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< device: cuda:0
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< diffusion_steps: 1000
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< distributed: 0
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< do_eval: 0
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< do_train: 1
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< epochs: 10
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< init_model: None
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< interaction: wti
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< local_rank: 0
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< lr: 0.0001
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< max_frames: 12
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< max_words: 32
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< moment: 0.99
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< n_display: 50
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< neg: 0
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< noise_schedule: cosine
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< num: 127
+[2023-11-08 17:56:16,545 tvr 131 INFO]:   <<< num_hidden_layers: 4
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< output_dir: output/msvd_pretrain
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< seed: 42
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< sigma_small: True
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< stage: discrimination
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< t2v_alpha: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< t2v_num: 32
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< t2v_temp: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< temp: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< v2t_alpha: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< v2t_num: 32
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< v2t_temp: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< video_framerate: 1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< video_path: /data/kylee/projects/HBI/MSVD/msvd_data/MSVD_Videos
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< warmup_proportion: 0.1
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< weight_decay: 0.2
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< workers: 8
+[2023-11-08 17:56:16,546 tvr 131 INFO]:   <<< world_size: 1
+[2023-11-08 17:56:30,103 tvr 171 INFO]: ***** Running test *****
+[2023-11-08 17:56:30,103 tvr 172 INFO]:   Num examples = 27763
+[2023-11-08 17:56:30,103 tvr 173 INFO]:   Batch size = 128
+[2023-11-08 17:56:30,103 tvr 174 INFO]:   Num steps = 217
+[2023-11-08 17:56:30,104 tvr 175 INFO]: ***** Running val *****
+[2023-11-08 17:56:30,104 tvr 176 INFO]:   Num examples = 27763
+[2023-11-08 17:56:30,322 tvr 187 INFO]: ***** Running training *****
+[2023-11-08 17:56:30,322 tvr 188 INFO]:   Num examples = 48774
+[2023-11-08 17:56:30,323 tvr 189 INFO]:   Batch size = 128
+[2023-11-08 17:56:30,323 tvr 190 INFO]:   Num steps = 3810
+[2023-11-08 17:56:43,495 tvr 336 INFO]: eta: 13:55:12  epoch: 0/10  iteration: 1/3810  time: 13.1564 (13.1564)  data: 8.2800 (8.2800)  loss: 2.2090 (2.2090)  discrimination_loss: 2.2090 (2.2090)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000525  logit_scale: 100.00max mem: 35273
+[2023-11-08 17:56:43,501 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 17:56:43,501 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 17:56:43,502 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 18:05:39,670 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 18:05:39,670 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 18:05:39,670 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 18:05:39,670 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 18:05:39,673 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 18:05:50,850 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 18:05:50,850 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 18:05:50,851 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 18:05:51,179 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 18:05:51,180 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 18:05:52,382 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 18:05:52,382 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 18:05:52,382 tvr 641 INFO]: time profile: feat 536.2s match 11.18025s metrics 1.53202s
+[2023-11-08 18:05:52,383 tvr 643 INFO]: Text-to-Video: R@1: 30.5 - R@5: 56.9 - R@10: 67.3 - R@50: 85.4 - Median R: 4.0 - Mean R: 35.0
+[2023-11-08 18:05:52,383 tvr 647 INFO]: Video-to-Text: R@1: 46.7 - R@5: 78.1 - R@10: 86.2 - R@50: 97.8 - Median R: 2.0 - Mean R: 7.0
+[2023-11-08 18:05:52,388 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 18:05:52,388 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 18:05:52,389 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 18:14:50,554 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 18:14:50,554 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 18:14:50,554 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 18:14:50,555 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 18:14:50,556 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 18:15:01,704 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 18:15:01,704 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 18:15:01,704 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 18:15:02,039 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 18:15:02,039 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 18:15:03,181 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 18:15:03,181 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 18:15:03,181 tvr 641 INFO]: time profile: feat 538.2s match 11.14997s metrics 1.47703s
+[2023-11-08 18:15:03,181 tvr 643 INFO]: ema Text-to-Video: R@1: 30.6 - R@5: 57.1 - R@10: 67.5 - R@50: 85.5 - Median R: 4.0 - Mean R: 34.8
+[2023-11-08 18:15:03,182 tvr 647 INFO]: ema Video-to-Text: R@1: 46.9 - R@5: 77.9 - R@10: 85.9 - R@50: 97.4 - Median R: 2.0 - Mean R: 6.9
+[2023-11-08 18:16:29,199 tvr 336 INFO]: eta: 1 day, 1:02:34  epoch: 0/10  iteration: 50/3810  time: 1.7455 (23.9772)  data: 0.1290 (22.2955)  loss: 1.2982 (1.5991)  discrimination_loss: 1.2982 (1.5991)  generation_loss: 0.0000 (0.0000)  lr: 0.000000026/0.000026247  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:17:57,557 tvr 336 INFO]: eta: 13:15:55  epoch: 0/10  iteration: 100/3810  time: 1.7607 (12.8722)  data: 0.1313 (11.2158)  loss: 0.8762 (1.2998)  discrimination_loss: 0.8762 (1.2998)  generation_loss: 0.0000 (0.0000)  lr: 0.000000052/0.000052493  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:19:25,721 tvr 336 INFO]: eta: 9:19:19  epoch: 0/10  iteration: 150/3810  time: 1.7720 (9.1692)  data: 0.1435 (7.5232)  loss: 0.8143 (1.1434)  discrimination_loss: 0.8143 (1.1434)  generation_loss: 0.0000 (0.0000)  lr: 0.000000079/0.000078740  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:19:25,725 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 18:19:25,725 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 18:19:25,726 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 18:28:28,712 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 18:28:28,712 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 18:28:28,712 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 18:28:28,713 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 18:28:28,714 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 18:28:40,456 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 18:28:40,456 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 18:28:40,457 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 18:28:40,920 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 18:28:40,920 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 18:28:42,108 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 18:28:42,108 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 18:28:42,108 tvr 641 INFO]: time profile: feat 543.0s match 11.74413s metrics 1.65178s
+[2023-11-08 18:28:42,108 tvr 643 INFO]: Text-to-Video: R@1: 43.2 - R@5: 73.0 - R@10: 82.4 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.2
+[2023-11-08 18:28:42,108 tvr 647 INFO]: Video-to-Text: R@1: 56.4 - R@5: 83.9 - R@10: 90.7 - R@50: 99.1 - Median R: 1.0 - Mean R: 4.1
+[2023-11-08 18:28:42,114 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 18:28:42,115 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 18:28:42,115 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 18:37:44,473 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 18:37:44,474 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 18:37:44,474 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 18:37:44,474 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 18:37:44,476 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 18:37:55,793 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 18:37:55,793 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 18:37:55,793 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 18:37:56,131 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 18:37:56,131 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 18:37:57,513 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 18:37:57,513 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 18:37:57,513 tvr 641 INFO]: time profile: feat 542.4s match 11.31953s metrics 1.72016s
+[2023-11-08 18:37:57,513 tvr 643 INFO]: ema Text-to-Video: R@1: 41.4 - R@5: 70.4 - R@10: 80.2 - R@50: 92.8 - Median R: 2.0 - Mean R: 18.7
+[2023-11-08 18:37:57,514 tvr 647 INFO]: ema Video-to-Text: R@1: 58.6 - R@5: 84.7 - R@10: 91.0 - R@50: 98.9 - Median R: 1.0 - Mean R: 4.3
+[2023-11-08 18:39:26,559 tvr 336 INFO]: eta: 12:55:00  epoch: 0/10  iteration: 200/3810  time: 1.7570 (12.8811)  data: 0.1400 (11.2408)  loss: 0.7650 (1.0511)  discrimination_loss: 0.7650 (1.0511)  generation_loss: 0.0000 (0.0000)  lr: 0.000000097/0.000097305  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:40:55,248 tvr 336 INFO]: eta: 10:32:28  epoch: 0/10  iteration: 250/3810  time: 1.7762 (10.6596)  data: 0.1447 (9.0220)  loss: 0.7065 (0.9844)  discrimination_loss: 0.7065 (0.9844)  generation_loss: 0.0000 (0.0000)  lr: 0.000000096/0.000095810  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:42:24,415 tvr 336 INFO]: eta: 8:57:02  epoch: 0/10  iteration: 300/3810  time: 1.7787 (9.1803)  data: 0.1492 (7.5429)  loss: 0.6377 (0.9376)  discrimination_loss: 0.6377 (0.9376)  generation_loss: 0.0000 (0.0000)  lr: 0.000000094/0.000094005  logit_scale: 100.00max mem: 36410
+[2023-11-08 18:42:24,420 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 18:42:24,420 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 18:42:24,421 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 18:51:30,619 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 18:51:30,620 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 18:51:30,620 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 18:51:30,620 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 18:51:30,622 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 18:51:41,879 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 18:51:41,879 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 18:51:41,879 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 18:51:42,221 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 18:51:42,222 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 18:51:43,391 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 18:51:43,392 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 18:51:43,392 tvr 641 INFO]: time profile: feat 546.2s match 11.25975s metrics 1.51264s
+[2023-11-08 18:51:43,392 tvr 643 INFO]: Text-to-Video: R@1: 44.5 - R@5: 74.2 - R@10: 83.2 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.5
+[2023-11-08 18:51:43,392 tvr 647 INFO]: Video-to-Text: R@1: 57.2 - R@5: 84.7 - R@10: 92.2 - R@50: 99.2 - Median R: 1.0 - Mean R: 4.4
+[2023-11-08 18:51:43,398 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 18:51:43,398 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 18:51:43,399 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:00:47,170 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:00:47,170 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:00:47,170 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:00:47,170 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:00:47,172 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:00:58,435 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:00:58,435 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:00:58,435 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:00:58,784 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:00:58,785 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:00:59,955 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:00:59,955 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:00:59,955 tvr 641 INFO]: time profile: feat 543.8s match 11.26520s metrics 1.51981s
+[2023-11-08 19:00:59,955 tvr 643 INFO]: ema Text-to-Video: R@1: 45.0 - R@5: 74.4 - R@10: 83.2 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.3
+[2023-11-08 19:00:59,955 tvr 647 INFO]: ema Video-to-Text: R@1: 59.7 - R@5: 83.9 - R@10: 91.2 - R@50: 99.2 - Median R: 1.0 - Mean R: 4.1
+[2023-11-08 19:02:29,434 tvr 336 INFO]: eta: 10:52:18  epoch: 0/10  iteration: 350/3810  time: 1.7804 (11.3117)  data: 0.1440 (9.6755)  loss: 0.6133 (0.8979)  discrimination_loss: 0.6133 (0.8979)  generation_loss: 0.0000 (0.0000)  lr: 0.000000092/0.000091900  logit_scale: 100.00max mem: 36410
+[2023-11-08 19:03:23,751 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:03:23,751 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:03:23,752 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:12:27,765 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:12:27,766 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:12:27,766 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:12:27,766 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:12:27,768 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:12:38,955 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:12:38,956 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:12:38,956 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:12:39,313 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:12:39,314 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:12:40,582 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:12:40,583 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:12:40,583 tvr 641 INFO]: time profile: feat 544.0s match 11.19023s metrics 1.62680s
+[2023-11-08 19:12:40,583 tvr 643 INFO]: Text-to-Video: R@1: 44.0 - R@5: 73.6 - R@10: 82.7 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-08 19:12:40,583 tvr 647 INFO]: Video-to-Text: R@1: 56.4 - R@5: 81.8 - R@10: 85.6 - R@50: 92.7 - Median R: 1.0 - Mean R: 9.3
+[2023-11-08 19:12:40,588 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:12:40,589 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:12:40,589 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:21:45,274 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:21:45,275 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:21:45,275 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:21:45,275 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:21:45,277 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:21:56,565 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:21:56,566 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:21:56,566 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:21:56,931 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:21:56,932 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:21:58,140 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:21:58,141 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:21:58,141 tvr 641 INFO]: time profile: feat 544.7s match 11.29065s metrics 1.57539s
+[2023-11-08 19:21:58,141 tvr 643 INFO]: ema Text-to-Video: R@1: 45.4 - R@5: 74.9 - R@10: 83.5 - R@50: 94.3 - Median R: 2.0 - Mean R: 16.0
+[2023-11-08 19:21:58,141 tvr 647 INFO]: ema Video-to-Text: R@1: 59.0 - R@5: 84.8 - R@10: 90.7 - R@50: 99.3 - Median R: 1.0 - Mean R: 4.2
+[2023-11-08 19:22:41,298 tvr 336 INFO]: eta: 9:36:13  epoch: 1/10  iteration: 400/3810  time: 1.7918 (10.1388)  data: 0.1408 (8.5042)  loss: 0.5331 (0.8607)  discrimination_loss: 0.5331 (0.8607)  generation_loss: 0.0000 (0.0000)  lr: 0.000000090/0.000089510  logit_scale: 100.00max mem: 36413
+[2023-11-08 19:24:09,900 tvr 336 INFO]: eta: 8:35:42  epoch: 1/10  iteration: 450/3810  time: 1.7721 (9.2091)  data: 0.1404 (7.5751)  loss: 0.4821 (0.8242)  discrimination_loss: 0.4821 (0.8242)  generation_loss: 0.0000 (0.0000)  lr: 0.000000087/0.000086852  logit_scale: 100.00max mem: 36413
+[2023-11-08 19:24:09,905 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:24:09,905 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:24:09,906 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:33:15,227 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:33:15,228 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:33:15,228 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:33:15,228 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:33:15,230 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:33:26,461 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:33:26,461 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:33:26,462 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:33:26,815 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:33:26,816 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:33:27,995 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:33:27,996 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:33:27,996 tvr 641 INFO]: time profile: feat 545.3s match 11.23374s metrics 1.53439s
+[2023-11-08 19:33:27,996 tvr 643 INFO]: Text-to-Video: R@1: 44.6 - R@5: 75.0 - R@10: 82.9 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 19:33:27,996 tvr 647 INFO]: Video-to-Text: R@1: 54.4 - R@5: 84.1 - R@10: 91.8 - R@50: 99.1 - Median R: 1.0 - Mean R: 4.2
+[2023-11-08 19:33:28,002 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:33:28,003 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:33:28,003 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:42:32,209 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:42:32,210 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:42:32,210 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:42:32,210 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:42:32,212 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:42:43,405 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:42:43,405 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:42:43,406 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:42:43,737 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:42:43,737 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:42:44,889 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:42:44,889 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:42:44,890 tvr 641 INFO]: time profile: feat 544.2s match 11.19577s metrics 1.48418s
+[2023-11-08 19:42:44,890 tvr 643 INFO]: ema Text-to-Video: R@1: 45.6 - R@5: 75.2 - R@10: 83.7 - R@50: 94.2 - Median R: 2.0 - Mean R: 16.0
+[2023-11-08 19:42:44,890 tvr 647 INFO]: ema Video-to-Text: R@1: 57.7 - R@5: 84.3 - R@10: 90.4 - R@50: 99.3 - Median R: 1.0 - Mean R: 4.4
+[2023-11-08 19:44:14,063 tvr 336 INFO]: eta: 9:50:05  epoch: 1/10  iteration: 500/3810  time: 1.7722 (10.6965)  data: 0.1388 (9.0631)  loss: 0.4903 (0.7964)  discrimination_loss: 0.4903 (0.7964)  generation_loss: 0.0000 (0.0000)  lr: 0.000000084/0.000083944  logit_scale: 100.00max mem: 36413
+[2023-11-08 19:45:42,644 tvr 336 INFO]: eta: 8:57:05  epoch: 1/10  iteration: 550/3810  time: 1.7660 (9.8852)  data: 0.1388 (8.2519)  loss: 0.5262 (0.7722)  discrimination_loss: 0.5262 (0.7722)  generation_loss: 0.0000 (0.0000)  lr: 0.000000081/0.000080805  logit_scale: 100.00max mem: 36413
+[2023-11-08 19:47:11,484 tvr 336 INFO]: eta: 8:12:42  epoch: 1/10  iteration: 600/3810  time: 1.7816 (9.2095)  data: 0.1478 (7.5765)  loss: 0.5062 (0.7532)  discrimination_loss: 0.5062 (0.7532)  generation_loss: 0.0000 (0.0000)  lr: 0.000000077/0.000077456  logit_scale: 100.00max mem: 36413
+[2023-11-08 19:47:11,488 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:47:11,488 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:47:11,489 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 19:56:18,172 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 19:56:18,172 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 19:56:18,172 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 19:56:18,172 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 19:56:18,175 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 19:56:29,283 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 19:56:29,284 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 19:56:29,284 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 19:56:29,620 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 19:56:29,620 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 19:56:30,777 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 19:56:30,777 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 19:56:30,778 tvr 641 INFO]: time profile: feat 546.7s match 11.11182s metrics 1.49350s
+[2023-11-08 19:56:30,778 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.6 - R@10: 83.4 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-08 19:56:30,778 tvr 647 INFO]: Video-to-Text: R@1: 48.1 - R@5: 72.6 - R@10: 79.6 - R@50: 87.5 - Median R: 2.0 - Mean R: 14.5
+[2023-11-08 19:56:30,783 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 19:56:30,784 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 19:56:30,784 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 20:05:35,857 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 20:05:35,857 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 20:05:35,858 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 20:05:35,858 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 20:05:35,860 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 20:05:47,100 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 20:05:47,101 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 20:05:47,101 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 20:05:47,436 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 20:05:47,436 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 20:05:48,606 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 20:05:48,607 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 20:05:48,607 tvr 641 INFO]: time profile: feat 545.1s match 11.24352s metrics 1.50569s
+[2023-11-08 20:05:48,607 tvr 643 INFO]: ema Text-to-Video: R@1: 46.4 - R@5: 75.5 - R@10: 83.8 - R@50: 94.4 - Median R: 2.0 - Mean R: 15.9
+[2023-11-08 20:05:48,607 tvr 647 INFO]: ema Video-to-Text: R@1: 57.1 - R@5: 83.4 - R@10: 89.3 - R@50: 98.6 - Median R: 1.0 - Mean R: 5.0
+[2023-11-08 20:07:17,779 tvr 336 INFO]: eta: 9:05:27  epoch: 1/10  iteration: 650/3810  time: 1.7769 (10.3569)  data: 0.1407 (8.7244)  loss: 0.5146 (0.7354)  discrimination_loss: 0.5146 (0.7354)  generation_loss: 0.0000 (0.0000)  lr: 0.000000074/0.000073921  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:08:46,291 tvr 336 INFO]: eta: 8:25:02  epoch: 1/10  iteration: 700/3810  time: 1.7684 (9.7436)  data: 0.1416 (8.1116)  loss: 0.4995 (0.7193)  discrimination_loss: 0.4995 (0.7193)  generation_loss: 0.0000 (0.0000)  lr: 0.000000070/0.000070224  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:10:14,790 tvr 336 INFO]: eta: 7:49:48  epoch: 1/10  iteration: 750/3810  time: 1.7632 (9.2120)  data: 0.1395 (7.5804)  loss: 0.4919 (0.7054)  discrimination_loss: 0.4919 (0.7054)  generation_loss: 0.0000 (0.0000)  lr: 0.000000066/0.000066389  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:10:14,793 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 20:10:14,794 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 20:10:14,794 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 20:19:20,531 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 20:19:20,531 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 20:19:20,532 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 20:19:20,532 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 20:19:20,534 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 20:19:31,696 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 20:19:31,696 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 20:19:31,696 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 20:19:32,034 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 20:19:32,035 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 20:19:33,193 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 20:19:33,193 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 20:19:33,193 tvr 641 INFO]: time profile: feat 545.7s match 11.16469s metrics 1.49700s
+[2023-11-08 20:19:33,193 tvr 643 INFO]: Text-to-Video: R@1: 45.4 - R@5: 74.7 - R@10: 83.3 - R@50: 94.2 - Median R: 2.0 - Mean R: 16.4
+[2023-11-08 20:19:33,193 tvr 647 INFO]: Video-to-Text: R@1: 52.0 - R@5: 77.8 - R@10: 84.6 - R@50: 91.7 - Median R: 1.0 - Mean R: 10.3
+[2023-11-08 20:19:33,199 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 20:19:33,199 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 20:19:33,200 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 20:28:37,648 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 20:28:37,649 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 20:28:37,649 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 20:28:37,649 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 20:28:37,651 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 20:28:48,893 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 20:28:48,893 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 20:28:48,893 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 20:28:49,239 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 20:28:49,239 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 20:28:50,414 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 20:28:50,414 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 20:28:50,414 tvr 641 INFO]: time profile: feat 544.4s match 11.24469s metrics 1.52093s
+[2023-11-08 20:28:50,414 tvr 643 INFO]: ema Text-to-Video: R@1: 46.6 - R@5: 76.0 - R@10: 84.2 - R@50: 94.5 - Median R: 2.0 - Mean R: 15.7
+[2023-11-08 20:28:50,414 tvr 647 INFO]: ema Video-to-Text: R@1: 57.3 - R@5: 84.5 - R@10: 90.6 - R@50: 98.8 - Median R: 1.0 - Mean R: 4.6
+[2023-11-08 20:29:11,774 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 20:29:11,774 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 20:29:11,775 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 20:38:17,820 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 20:38:17,820 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 20:38:17,820 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 20:38:17,820 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 20:38:17,822 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 20:38:29,107 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 20:38:29,107 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 20:38:29,107 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 20:38:29,470 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 20:38:29,470 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 20:38:30,685 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 20:38:30,685 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 20:38:30,685 tvr 641 INFO]: time profile: feat 546.0s match 11.28711s metrics 1.57842s
+[2023-11-08 20:38:30,686 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.7 - R@10: 83.0 - R@50: 94.1 - Median R: 2.0 - Mean R: 16.5
+[2023-11-08 20:38:30,686 tvr 647 INFO]: Video-to-Text: R@1: 41.6 - R@5: 63.6 - R@10: 68.6 - R@50: 80.4 - Median R: 2.0 - Mean R: 19.4
+[2023-11-08 20:38:30,691 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 20:38:30,692 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 20:38:30,692 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 20:47:36,323 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 20:47:36,323 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 20:47:36,323 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 20:47:36,323 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 20:47:36,326 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 20:47:47,421 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 20:47:47,421 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 20:47:47,421 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 20:47:47,776 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 20:47:47,777 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 20:47:48,978 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 20:47:48,978 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 20:47:48,978 tvr 641 INFO]: time profile: feat 545.6s match 11.09800s metrics 1.55713s
+[2023-11-08 20:47:48,978 tvr 643 INFO]: ema Text-to-Video: R@1: 46.6 - R@5: 75.9 - R@10: 84.2 - R@50: 94.4 - Median R: 2.0 - Mean R: 15.7
+[2023-11-08 20:47:48,979 tvr 647 INFO]: ema Video-to-Text: R@1: 56.4 - R@5: 84.5 - R@10: 91.1 - R@50: 98.8 - Median R: 1.0 - Mean R: 4.6
+[2023-11-08 20:49:06,249 tvr 336 INFO]: eta: 8:29:18  epoch: 2/10  iteration: 800/3810  time: 1.7601 (10.1524)  data: 0.1386 (8.5216)  loss: 0.3862 (0.6876)  discrimination_loss: 0.3862 (0.6876)  generation_loss: 0.0000 (0.0000)  lr: 0.000000062/0.000062442  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:50:34,363 tvr 336 INFO]: eta: 7:56:30  epoch: 2/10  iteration: 850/3810  time: 1.7582 (9.6589)  data: 0.1361 (8.0285)  loss: 0.4029 (0.6713)  discrimination_loss: 0.4029 (0.6713)  generation_loss: 0.0000 (0.0000)  lr: 0.000000058/0.000058412  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:52:03,031 tvr 336 INFO]: eta: 7:27:12  epoch: 2/10  iteration: 900/3810  time: 1.7737 (9.2208)  data: 0.1458 (7.5907)  loss: 0.4163 (0.6571)  discrimination_loss: 0.4163 (0.6571)  generation_loss: 0.0000 (0.0000)  lr: 0.000000054/0.000054324  logit_scale: 100.00max mem: 36413
+[2023-11-08 20:52:03,039 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 20:52:03,039 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 20:52:03,041 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:01:08,780 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:01:08,780 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:01:08,780 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:01:08,780 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:01:08,783 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:01:19,920 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:01:19,920 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:01:19,920 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:01:20,250 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:01:20,251 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:01:21,407 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:01:21,408 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:01:21,408 tvr 641 INFO]: time profile: feat 545.7s match 11.14002s metrics 1.48756s
+[2023-11-08 21:01:21,408 tvr 643 INFO]: Text-to-Video: R@1: 44.7 - R@5: 74.6 - R@10: 83.2 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.7
+[2023-11-08 21:01:21,408 tvr 647 INFO]: Video-to-Text: R@1: 46.1 - R@5: 71.3 - R@10: 76.0 - R@50: 90.0 - Median R: 2.0 - Mean R: 13.4
+[2023-11-08 21:01:21,414 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:01:21,414 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:01:21,415 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:10:25,668 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:10:25,668 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:10:25,668 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:10:25,668 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:10:25,670 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:10:36,884 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:10:36,885 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:10:36,885 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:10:37,221 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:10:37,222 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:10:38,390 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:10:38,391 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:10:38,391 tvr 641 INFO]: time profile: feat 544.3s match 11.21630s metrics 1.50622s
+[2023-11-08 21:10:38,391 tvr 643 INFO]: ema Text-to-Video: R@1: 46.3 - R@5: 75.9 - R@10: 84.0 - R@50: 94.3 - Median R: 2.0 - Mean R: 15.9
+[2023-11-08 21:10:38,391 tvr 647 INFO]: ema Video-to-Text: R@1: 56.7 - R@5: 83.9 - R@10: 90.8 - R@50: 98.6 - Median R: 1.0 - Mean R: 4.6
+[2023-11-08 21:12:06,697 tvr 336 INFO]: eta: 7:56:47  epoch: 2/10  iteration: 950/3810  time: 1.7686 (10.0025)  data: 0.1379 (8.3726)  loss: 0.4154 (0.6448)  discrimination_loss: 0.4154 (0.6448)  generation_loss: 0.0000 (0.0000)  lr: 0.000000050/0.000050206  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:13:35,060 tvr 336 INFO]: eta: 7:29:09  epoch: 2/10  iteration: 1000/3810  time: 1.7670 (9.5907)  data: 0.1368 (7.9610)  loss: 0.4255 (0.6334)  discrimination_loss: 0.4255 (0.6334)  generation_loss: 0.0000 (0.0000)  lr: 0.000000046/0.000046087  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:15:03,426 tvr 336 INFO]: eta: 7:04:02  epoch: 2/10  iteration: 1050/3810  time: 1.7667 (9.2182)  data: 0.1382 (7.5886)  loss: 0.4379 (0.6226)  discrimination_loss: 0.4379 (0.6226)  generation_loss: 0.0000 (0.0000)  lr: 0.000000042/0.000041995  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:15:03,430 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:15:03,430 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:15:03,431 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:24:08,896 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:24:08,896 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:24:08,896 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:24:08,896 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:24:08,898 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:24:20,137 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:24:20,138 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:24:20,138 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:24:20,474 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:24:20,474 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:24:21,630 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:24:21,631 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:24:21,631 tvr 641 INFO]: time profile: feat 545.5s match 11.24175s metrics 1.49272s
+[2023-11-08 21:24:21,631 tvr 643 INFO]: Text-to-Video: R@1: 45.2 - R@5: 75.1 - R@10: 83.5 - R@50: 93.8 - Median R: 2.0 - Mean R: 16.7
+[2023-11-08 21:24:21,631 tvr 647 INFO]: Video-to-Text: R@1: 42.1 - R@5: 65.6 - R@10: 70.5 - R@50: 87.9 - Median R: 2.0 - Mean R: 16.4
+[2023-11-08 21:24:21,637 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:24:21,637 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:24:21,638 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:33:26,754 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:33:26,754 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:33:26,754 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:33:26,755 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:33:26,757 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:33:37,994 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:33:37,995 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:33:37,995 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:33:38,329 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:33:38,330 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:33:39,492 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:33:39,493 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:33:39,493 tvr 641 INFO]: time profile: feat 545.1s match 11.24074s metrics 1.49772s
+[2023-11-08 21:33:39,493 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.7 - R@10: 84.1 - R@50: 94.2 - Median R: 2.0 - Mean R: 15.9
+[2023-11-08 21:33:39,493 tvr 647 INFO]: ema Video-to-Text: R@1: 51.4 - R@5: 78.3 - R@10: 84.7 - R@50: 93.7 - Median R: 1.0 - Mean R: 8.8
+[2023-11-08 21:35:07,561 tvr 336 INFO]: eta: 7:26:52  epoch: 2/10  iteration: 1100/3810  time: 1.7635 (9.8939)  data: 0.1440 (8.2648)  loss: 0.3777 (0.6123)  discrimination_loss: 0.3777 (0.6123)  generation_loss: 0.0000 (0.0000)  lr: 0.000000038/0.000037957  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:36:23,341 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:36:23,342 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:36:23,342 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:45:28,168 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:45:28,168 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:45:28,168 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:45:28,168 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:45:28,170 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:45:39,397 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:45:39,398 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:45:39,398 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:45:39,764 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:45:39,765 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:45:40,974 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:45:40,974 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:45:40,974 tvr 641 INFO]: time profile: feat 544.8s match 11.22990s metrics 1.57625s
+[2023-11-08 21:45:40,974 tvr 643 INFO]: Text-to-Video: R@1: 45.0 - R@5: 75.2 - R@10: 83.3 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.5
+[2023-11-08 21:45:40,974 tvr 647 INFO]: Video-to-Text: R@1: 44.9 - R@5: 68.3 - R@10: 74.0 - R@50: 83.5 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 21:45:40,980 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:45:40,980 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:45:40,981 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 21:54:45,898 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 21:54:45,898 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 21:54:45,898 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 21:54:45,898 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 21:54:45,900 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 21:54:57,114 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 21:54:57,114 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 21:54:57,114 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 21:54:57,473 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 21:54:57,474 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 21:54:58,677 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 21:54:58,678 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 21:54:58,678 tvr 641 INFO]: time profile: feat 544.9s match 11.21587s metrics 1.56371s
+[2023-11-08 21:54:58,678 tvr 643 INFO]: ema Text-to-Video: R@1: 45.9 - R@5: 75.6 - R@10: 84.0 - R@50: 94.2 - Median R: 2.0 - Mean R: 16.0
+[2023-11-08 21:54:58,678 tvr 647 INFO]: ema Video-to-Text: R@1: 55.2 - R@5: 82.7 - R@10: 89.0 - R@50: 98.3 - Median R: 1.0 - Mean R: 5.4
+[2023-11-08 21:55:19,697 tvr 336 INFO]: eta: 7:03:15  epoch: 3/10  iteration: 1150/3810  time: 1.6884 (9.5473)  data: 0.1225 (7.9185)  loss: 0.3356 (0.6027)  discrimination_loss: 0.3356 (0.6027)  generation_loss: 0.0000 (0.0000)  lr: 0.000000034/0.000034001  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:56:48,242 tvr 336 INFO]: eta: 6:41:12  epoch: 3/10  iteration: 1200/3810  time: 1.7718 (9.2233)  data: 0.1389 (7.5944)  loss: 0.3487 (0.5911)  discrimination_loss: 0.3487 (0.5911)  generation_loss: 0.0000 (0.0000)  lr: 0.000000030/0.000030154  logit_scale: 100.00max mem: 36413
+[2023-11-08 21:56:48,247 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 21:56:48,248 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 21:56:48,249 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 22:05:53,787 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 22:05:53,787 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 22:05:53,787 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 22:05:53,788 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 22:05:53,790 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 22:06:05,040 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 22:06:05,041 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 22:06:05,041 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 22:06:05,374 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 22:06:05,375 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 22:06:06,528 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 22:06:06,528 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 22:06:06,528 tvr 641 INFO]: time profile: feat 545.5s match 11.25336s metrics 1.48733s
+[2023-11-08 22:06:06,528 tvr 643 INFO]: Text-to-Video: R@1: 45.0 - R@5: 74.8 - R@10: 83.0 - R@50: 93.8 - Median R: 2.0 - Mean R: 16.8
+[2023-11-08 22:06:06,528 tvr 647 INFO]: Video-to-Text: R@1: 39.1 - R@5: 63.4 - R@10: 68.7 - R@50: 86.0 - Median R: 2.0 - Mean R: 17.7
+[2023-11-08 22:06:06,536 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 22:06:06,536 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 22:06:06,537 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 22:15:11,132 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 22:15:11,132 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 22:15:11,132 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 22:15:11,132 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 22:15:11,134 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 22:15:22,274 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 22:15:22,275 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 22:15:22,275 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 22:15:22,605 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 22:15:22,606 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 22:15:23,792 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 22:15:23,792 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 22:15:23,792 tvr 641 INFO]: time profile: feat 544.6s match 11.14301s metrics 1.51689s
+[2023-11-08 22:15:23,792 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.5 - R@10: 83.9 - R@50: 94.2 - Median R: 2.0 - Mean R: 16.1
+[2023-11-08 22:15:23,792 tvr 647 INFO]: ema Video-to-Text: R@1: 52.3 - R@5: 77.5 - R@10: 83.4 - R@50: 93.9 - Median R: 1.0 - Mean R: 8.8
+[2023-11-08 22:16:51,789 tvr 336 INFO]: eta: 6:58:51  epoch: 3/10  iteration: 1250/3810  time: 1.7559 (9.8172)  data: 0.1392 (8.1886)  loss: 0.3481 (0.5809)  discrimination_loss: 0.3481 (0.5809)  generation_loss: 0.0000 (0.0000)  lr: 0.000000026/0.000026442  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:18:20,207 tvr 336 INFO]: eta: 6:37:44  epoch: 3/10  iteration: 1300/3810  time: 1.7555 (9.5076)  data: 0.1366 (7.8791)  loss: 0.3336 (0.5709)  discrimination_loss: 0.3336 (0.5709)  generation_loss: 0.0000 (0.0000)  lr: 0.000000023/0.000022889  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:19:48,667 tvr 336 INFO]: eta: 6:18:03  epoch: 3/10  iteration: 1350/3810  time: 1.7592 (9.2210)  data: 0.1375 (7.5925)  loss: 0.3143 (0.5622)  discrimination_loss: 0.3143 (0.5622)  generation_loss: 0.0000 (0.0000)  lr: 0.000000020/0.000019521  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:19:48,674 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 22:19:48,675 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 22:19:48,676 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 22:28:54,756 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 22:28:54,757 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 22:28:54,757 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 22:28:54,757 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 22:28:54,759 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 22:29:05,989 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 22:29:05,990 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 22:29:05,990 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 22:29:06,323 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 22:29:06,323 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 22:29:07,472 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 22:29:07,472 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 22:29:07,472 tvr 641 INFO]: time profile: feat 546.1s match 11.23291s metrics 1.48290s
+[2023-11-08 22:29:07,472 tvr 643 INFO]: Text-to-Video: R@1: 45.4 - R@5: 74.9 - R@10: 83.2 - R@50: 93.8 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 22:29:07,473 tvr 647 INFO]: Video-to-Text: R@1: 37.0 - R@5: 58.8 - R@10: 65.1 - R@50: 85.9 - Median R: 3.0 - Mean R: 18.1
+[2023-11-08 22:29:07,478 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 22:29:07,479 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 22:29:07,479 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 22:38:12,820 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 22:38:12,821 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 22:38:12,821 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 22:38:12,821 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 22:38:12,823 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 22:38:24,063 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 22:38:24,064 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 22:38:24,064 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 22:38:24,399 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 22:38:24,399 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 22:38:25,559 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 22:38:25,559 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 22:38:25,559 tvr 641 INFO]: time profile: feat 545.3s match 11.24271s metrics 1.49567s
+[2023-11-08 22:38:25,559 tvr 643 INFO]: ema Text-to-Video: R@1: 46.2 - R@5: 75.6 - R@10: 83.9 - R@50: 94.1 - Median R: 2.0 - Mean R: 16.2
+[2023-11-08 22:38:25,560 tvr 647 INFO]: ema Video-to-Text: R@1: 49.7 - R@5: 75.8 - R@10: 81.4 - R@50: 91.8 - Median R: 2.0 - Mean R: 11.8
+[2023-11-08 22:39:53,704 tvr 336 INFO]: eta: 6:31:43  epoch: 3/10  iteration: 1400/3810  time: 1.7563 (9.7524)  data: 0.1409 (8.1242)  loss: 0.3057 (0.5540)  discrimination_loss: 0.3057 (0.5540)  generation_loss: 0.0000 (0.0000)  lr: 0.000000016/0.000016360  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:41:22,261 tvr 336 INFO]: eta: 6:12:46  epoch: 3/10  iteration: 1450/3810  time: 1.7674 (9.4772)  data: 0.1421 (7.8491)  loss: 0.3117 (0.5463)  discrimination_loss: 0.3117 (0.5463)  generation_loss: 0.0000 (0.0000)  lr: 0.000000013/0.000013428  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:42:50,893 tvr 336 INFO]: eta: 5:54:59  epoch: 3/10  iteration: 1500/3810  time: 1.7671 (9.2204)  data: 0.1413 (7.5922)  loss: 0.2967 (0.5389)  discrimination_loss: 0.2967 (0.5389)  generation_loss: 0.0000 (0.0000)  lr: 0.000000011/0.000010744  logit_scale: 100.00max mem: 36413
+[2023-11-08 22:42:50,898 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 22:42:50,898 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 22:42:50,899 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 22:51:57,270 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 22:51:57,270 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 22:51:57,270 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 22:51:57,270 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 22:51:57,273 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 22:52:08,500 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 22:52:08,500 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 22:52:08,500 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 22:52:08,846 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 22:52:08,846 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 22:52:10,021 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 22:52:10,022 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 22:52:10,022 tvr 641 INFO]: time profile: feat 546.4s match 11.23008s metrics 1.52129s
+[2023-11-08 22:52:10,022 tvr 643 INFO]: Text-to-Video: R@1: 45.2 - R@5: 75.0 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 22:52:10,022 tvr 647 INFO]: Video-to-Text: R@1: 39.5 - R@5: 62.6 - R@10: 69.1 - R@50: 84.0 - Median R: 2.0 - Mean R: 18.6
+[2023-11-08 22:52:10,027 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 22:52:10,028 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 22:52:10,029 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:01:15,364 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:01:15,364 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:01:15,364 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:01:15,364 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:01:15,366 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:01:26,629 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:01:26,629 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:01:26,629 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:01:26,988 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:01:26,988 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:01:28,174 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:01:28,175 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:01:28,175 tvr 641 INFO]: time profile: feat 545.3s match 11.26538s metrics 1.54539s
+[2023-11-08 23:01:28,175 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.5 - R@10: 83.9 - R@50: 94.1 - Median R: 2.0 - Mean R: 16.3
+[2023-11-08 23:01:28,175 tvr 647 INFO]: ema Video-to-Text: R@1: 46.1 - R@5: 72.1 - R@10: 77.8 - R@50: 88.7 - Median R: 2.0 - Mean R: 13.1
+[2023-11-08 23:02:09,964 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:02:09,965 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:02:09,966 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:11:15,816 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:11:15,817 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:11:15,817 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:11:15,817 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:11:15,819 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:11:26,984 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:11:26,984 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:11:26,984 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:11:27,345 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:11:27,346 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:11:28,558 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:11:28,558 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:11:28,559 tvr 641 INFO]: time profile: feat 545.9s match 11.16747s metrics 1.57442s
+[2023-11-08 23:11:28,559 tvr 643 INFO]: Text-to-Video: R@1: 45.2 - R@5: 74.9 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 23:11:28,559 tvr 647 INFO]: Video-to-Text: R@1: 38.5 - R@5: 61.6 - R@10: 68.1 - R@50: 84.4 - Median R: 2.0 - Mean R: 18.6
+[2023-11-08 23:11:28,564 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:11:28,565 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:11:28,565 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:20:33,068 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:20:33,069 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:20:33,069 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:20:33,069 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:20:33,071 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:20:44,366 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:20:44,366 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:20:44,366 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:20:44,734 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:20:44,735 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:20:45,949 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:20:45,949 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:20:45,949 tvr 641 INFO]: time profile: feat 544.5s match 11.29780s metrics 1.58304s
+[2023-11-08 23:20:45,949 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.4 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.3
+[2023-11-08 23:20:45,950 tvr 647 INFO]: ema Video-to-Text: R@1: 49.1 - R@5: 76.4 - R@10: 82.5 - R@50: 94.3 - Median R: 2.0 - Mean R: 9.3
+[2023-11-08 23:21:41,314 tvr 336 INFO]: eta: 6:05:35  epoch: 4/10  iteration: 1550/3810  time: 1.7656 (9.7060)  data: 0.1390 (8.0783)  loss: 0.3184 (0.5324)  discrimination_loss: 0.3184 (0.5324)  generation_loss: 0.0000 (0.0000)  lr: 0.000000008/0.000008327  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:23:09,894 tvr 336 INFO]: eta: 5:48:22  epoch: 4/10  iteration: 1600/3810  time: 1.7629 (9.4581)  data: 0.1381 (7.8303)  loss: 0.2836 (0.5251)  discrimination_loss: 0.2836 (0.5251)  generation_loss: 0.0000 (0.0000)  lr: 0.000000006/0.000006193  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:24:38,650 tvr 336 INFO]: eta: 5:32:06  epoch: 4/10  iteration: 1650/3810  time: 1.7704 (9.2253)  data: 0.1444 (7.5974)  loss: 0.2845 (0.5184)  discrimination_loss: 0.2845 (0.5184)  generation_loss: 0.0000 (0.0000)  lr: 0.000000004/0.000004356  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:24:38,656 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:24:38,656 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:24:38,657 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:33:45,333 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:33:45,334 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:33:45,334 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:33:45,334 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:33:45,427 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:33:56,735 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:33:56,736 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:33:56,736 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:33:57,070 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:33:57,071 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:33:58,223 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:33:58,223 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:33:58,224 tvr 641 INFO]: time profile: feat 546.7s match 11.40201s metrics 1.48784s
+[2023-11-08 23:33:58,224 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 75.0 - R@10: 83.4 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 23:33:58,224 tvr 647 INFO]: Video-to-Text: R@1: 39.5 - R@5: 61.3 - R@10: 68.7 - R@50: 85.0 - Median R: 2.0 - Mean R: 18.0
+[2023-11-08 23:33:58,229 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:33:58,229 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:33:58,230 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:43:05,562 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:43:05,563 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:43:05,563 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:43:05,563 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:43:05,565 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:43:16,988 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:43:16,989 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:43:16,989 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:43:17,322 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:43:17,323 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:43:18,483 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:43:18,483 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:43:18,483 tvr 641 INFO]: time profile: feat 547.3s match 11.42628s metrics 1.49447s
+[2023-11-08 23:43:18,483 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.5 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-08 23:43:18,483 tvr 647 INFO]: ema Video-to-Text: R@1: 45.9 - R@5: 70.2 - R@10: 76.7 - R@50: 87.8 - Median R: 2.0 - Mean R: 13.6
+[2023-11-08 23:44:46,791 tvr 336 INFO]: eta: 5:39:52  epoch: 4/10  iteration: 1700/3810  time: 1.7682 (9.6646)  data: 0.1429 (8.0368)  loss: 0.2856 (0.5122)  discrimination_loss: 0.2856 (0.5122)  generation_loss: 0.0000 (0.0000)  lr: 0.000000003/0.000002830  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:46:15,358 tvr 336 INFO]: eta: 5:24:04  epoch: 4/10  iteration: 1750/3810  time: 1.7644 (9.4391)  data: 0.1442 (7.8113)  loss: 0.3344 (0.5061)  discrimination_loss: 0.3344 (0.5061)  generation_loss: 0.0000 (0.0000)  lr: 0.000000002/0.000001625  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:47:43,980 tvr 336 INFO]: eta: 5:09:04  epoch: 4/10  iteration: 1800/3810  time: 1.7710 (9.2261)  data: 0.1431 (7.5984)  loss: 0.2935 (0.5005)  discrimination_loss: 0.2935 (0.5005)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000748  logit_scale: 100.00max mem: 36413
+[2023-11-08 23:47:43,984 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:47:43,984 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:47:43,985 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-08 23:56:50,603 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-08 23:56:50,603 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-08 23:56:50,603 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-08 23:56:50,604 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-08 23:56:50,605 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-08 23:57:01,917 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-08 23:57:01,917 tvr 605 INFO]: [start] compute_metrics
+[2023-11-08 23:57:01,918 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-08 23:57:02,262 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-08 23:57:02,262 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-08 23:57:03,434 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-08 23:57:03,435 tvr 638 INFO]: [end] compute_metrics
+[2023-11-08 23:57:03,435 tvr 641 INFO]: time profile: feat 546.6s match 11.31415s metrics 1.51735s
+[2023-11-08 23:57:03,435 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 74.9 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-08 23:57:03,435 tvr 647 INFO]: Video-to-Text: R@1: 39.9 - R@5: 61.8 - R@10: 68.9 - R@50: 85.0 - Median R: 2.0 - Mean R: 18.0
+[2023-11-08 23:57:03,441 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-08 23:57:03,441 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-08 23:57:03,442 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 00:06:11,659 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 00:06:11,659 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 00:06:11,659 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 00:06:11,659 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 00:06:11,661 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 00:06:22,979 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 00:06:22,979 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 00:06:22,979 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 00:06:23,333 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 00:06:23,334 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 00:06:24,525 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 00:06:24,526 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 00:06:24,526 tvr 641 INFO]: time profile: feat 548.2s match 11.32018s metrics 1.54680s
+[2023-11-09 00:06:24,526 tvr 643 INFO]: ema Text-to-Video: R@1: 45.9 - R@5: 75.5 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 00:06:24,526 tvr 647 INFO]: ema Video-to-Text: R@1: 45.3 - R@5: 68.5 - R@10: 75.1 - R@50: 86.3 - Median R: 2.0 - Mean R: 15.2
+[2023-11-09 00:07:53,275 tvr 336 INFO]: eta: 5:14:35  epoch: 4/10  iteration: 1850/3810  time: 1.7802 (9.6304)  data: 0.1470 (8.0027)  loss: 0.3125 (0.4951)  discrimination_loss: 0.3125 (0.4951)  generation_loss: 0.0000 (0.0000)  lr: 0.000000000/0.000000206  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:09:21,523 tvr 336 INFO]: eta: 4:59:58  epoch: 4/10  iteration: 1900/3810  time: 1.7471 (9.4234)  data: 0.1374 (7.7959)  loss: 0.2834 (0.4901)  discrimination_loss: 0.2834 (0.4901)  generation_loss: 0.0000 (0.0000)  lr: 0.000000000/0.000000002  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:09:30,607 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 00:09:30,607 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 00:09:30,608 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 00:18:37,335 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 00:18:37,335 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 00:18:37,335 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 00:18:37,335 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 00:18:37,337 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 00:18:48,640 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 00:18:48,641 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 00:18:48,641 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 00:18:49,010 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 00:18:49,011 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 00:18:50,244 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 00:18:50,244 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 00:18:50,244 tvr 641 INFO]: time profile: feat 546.7s match 11.30603s metrics 1.60334s
+[2023-11-09 00:18:50,244 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 75.0 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-09 00:18:50,244 tvr 647 INFO]: Video-to-Text: R@1: 39.9 - R@5: 61.9 - R@10: 68.9 - R@50: 85.0 - Median R: 2.0 - Mean R: 18.1
+[2023-11-09 00:18:50,250 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 00:18:50,251 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 00:18:50,252 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 00:27:56,627 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 00:27:56,627 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 00:27:56,627 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 00:27:56,627 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 00:27:56,629 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 00:28:07,963 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 00:28:07,963 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 00:28:07,964 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 00:28:08,323 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 00:28:08,323 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 00:28:09,536 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 00:28:09,536 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 00:28:09,536 tvr 641 INFO]: time profile: feat 546.4s match 11.33638s metrics 1.57254s
+[2023-11-09 00:28:09,536 tvr 643 INFO]: ema Text-to-Video: R@1: 45.9 - R@5: 75.5 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 00:28:09,536 tvr 647 INFO]: ema Video-to-Text: R@1: 45.3 - R@5: 68.2 - R@10: 74.7 - R@50: 86.4 - Median R: 2.0 - Mean R: 15.2
+[2023-11-09 00:29:38,414 tvr 336 INFO]: eta: 4:46:11  epoch: 5/10  iteration: 1950/3810  time: 1.7742 (9.2317)  data: 0.1434 (7.6041)  loss: 0.3169 (0.4856)  discrimination_loss: 0.3169 (0.4856)  generation_loss: 0.0000 (0.0000)  lr: 0.000000000/0.000000138  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:29:38,419 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 00:29:38,419 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 00:29:38,421 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 00:38:44,615 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 00:38:44,615 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 00:38:44,615 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 00:38:44,615 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 00:38:44,618 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 00:38:55,860 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 00:38:55,861 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 00:38:55,861 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 00:38:56,203 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 00:38:56,204 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 00:38:57,389 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 00:38:57,389 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 00:38:57,389 tvr 641 INFO]: time profile: feat 546.2s match 11.24610s metrics 1.52839s
+[2023-11-09 00:38:57,390 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 75.0 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-09 00:38:57,390 tvr 647 INFO]: Video-to-Text: R@1: 39.9 - R@5: 61.9 - R@10: 68.9 - R@50: 85.0 - Median R: 2.0 - Mean R: 18.0
+[2023-11-09 00:38:57,396 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 00:38:57,396 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 00:38:57,397 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 00:48:02,727 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 00:48:02,728 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 00:48:02,728 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 00:48:02,728 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 00:48:02,730 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 00:48:13,925 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 00:48:13,926 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 00:48:13,926 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 00:48:14,267 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 00:48:14,267 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 00:48:15,437 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 00:48:15,437 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 00:48:15,438 tvr 641 INFO]: time profile: feat 545.3s match 11.19832s metrics 1.51157s
+[2023-11-09 00:48:15,438 tvr 643 INFO]: ema Text-to-Video: R@1: 45.9 - R@5: 75.5 - R@10: 83.9 - R@50: 94.1 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 00:48:15,438 tvr 647 INFO]: ema Video-to-Text: R@1: 45.3 - R@5: 68.2 - R@10: 74.7 - R@50: 86.4 - Median R: 2.0 - Mean R: 15.2
+[2023-11-09 00:49:43,882 tvr 336 INFO]: eta: 4:49:42  epoch: 5/10  iteration: 2000/3810  time: 1.7587 (9.6037)  data: 0.1386 (7.9761)  loss: 0.3195 (0.4810)  discrimination_loss: 0.3195 (0.4810)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000000612  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:51:12,677 tvr 336 INFO]: eta: 4:36:06  epoch: 5/10  iteration: 2050/3810  time: 1.7746 (9.4127)  data: 0.1422 (7.7851)  loss: 0.2854 (0.4765)  discrimination_loss: 0.2854 (0.4765)  generation_loss: 0.0000 (0.0000)  lr: 0.000000001/0.000001423  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:52:41,559 tvr 336 INFO]: eta: 4:23:04  epoch: 5/10  iteration: 2100/3810  time: 1.7732 (9.2310)  data: 0.1423 (7.6032)  loss: 0.2766 (0.4721)  discrimination_loss: 0.2766 (0.4721)  generation_loss: 0.0000 (0.0000)  lr: 0.000000003/0.000002563  logit_scale: 100.00max mem: 36413
+[2023-11-09 00:52:41,563 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 00:52:41,563 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 00:52:41,564 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:01:47,436 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:01:47,436 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:01:47,436 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:01:47,436 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:01:47,439 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:01:58,768 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:01:58,768 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:01:58,768 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:01:59,125 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:01:59,126 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:02:00,318 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:02:00,319 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:02:00,319 tvr 641 INFO]: time profile: feat 545.9s match 11.33198s metrics 1.55069s
+[2023-11-09 01:02:00,319 tvr 643 INFO]: Text-to-Video: R@1: 45.0 - R@5: 75.0 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-09 01:02:00,319 tvr 647 INFO]: Video-to-Text: R@1: 39.9 - R@5: 62.1 - R@10: 68.6 - R@50: 84.8 - Median R: 2.0 - Mean R: 18.2
+[2023-11-09 01:02:00,325 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:02:00,325 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:02:00,326 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:11:05,575 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:11:05,576 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:11:05,576 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:11:05,576 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:11:05,578 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:11:16,861 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:11:16,861 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:11:16,862 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:11:17,222 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:11:17,223 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:11:18,430 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:11:18,431 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:11:18,431 tvr 641 INFO]: time profile: feat 545.2s match 11.28573s metrics 1.56931s
+[2023-11-09 01:11:18,431 tvr 643 INFO]: ema Text-to-Video: R@1: 45.8 - R@5: 75.5 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 01:11:18,431 tvr 647 INFO]: ema Video-to-Text: R@1: 45.2 - R@5: 68.3 - R@10: 74.7 - R@50: 86.3 - Median R: 2.0 - Mean R: 15.2
+[2023-11-09 01:12:47,286 tvr 336 INFO]: eta: 4:24:57  epoch: 5/10  iteration: 2150/3810  time: 1.7836 (9.5771)  data: 0.1478 (7.9493)  loss: 0.3167 (0.4681)  discrimination_loss: 0.3167 (0.4681)  generation_loss: 0.0000 (0.0000)  lr: 0.000000004/0.000004026  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:14:16,450 tvr 336 INFO]: eta: 4:12:13  epoch: 5/10  iteration: 2200/3810  time: 1.7745 (9.4000)  data: 0.1475 (7.7720)  loss: 0.2696 (0.4641)  discrimination_loss: 0.2696 (0.4641)  generation_loss: 0.0000 (0.0000)  lr: 0.000000006/0.000005801  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:15:45,173 tvr 336 INFO]: eta: 3:59:59  epoch: 5/10  iteration: 2250/3810  time: 1.7786 (9.2305)  data: 0.1449 (7.6026)  loss: 0.3314 (0.4607)  discrimination_loss: 0.3314 (0.4607)  generation_loss: 0.0000 (0.0000)  lr: 0.000000008/0.000007877  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:15:45,178 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:15:45,178 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:15:45,179 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:24:51,741 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:24:51,742 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:24:51,742 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:24:51,742 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:24:51,744 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:25:02,984 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:25:02,984 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:25:02,985 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:25:03,337 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:25:03,338 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:25:04,526 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:25:04,527 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:25:04,527 tvr 641 INFO]: time profile: feat 546.6s match 11.24266s metrics 1.54249s
+[2023-11-09 01:25:04,527 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 74.9 - R@10: 83.2 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-09 01:25:04,527 tvr 647 INFO]: Video-to-Text: R@1: 38.9 - R@5: 61.3 - R@10: 67.4 - R@50: 83.9 - Median R: 2.0 - Mean R: 18.5
+[2023-11-09 01:25:04,533 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:25:04,534 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:25:04,534 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:34:07,837 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:34:07,837 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:34:07,837 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:34:07,837 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:34:07,840 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:34:19,099 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:34:19,100 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:34:19,100 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:34:19,435 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:34:19,436 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:34:20,601 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:34:20,602 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:34:20,602 tvr 641 INFO]: time profile: feat 543.3s match 11.26256s metrics 1.50197s
+[2023-11-09 01:34:20,602 tvr 643 INFO]: ema Text-to-Video: R@1: 45.8 - R@5: 75.5 - R@10: 83.8 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 01:34:20,602 tvr 647 INFO]: ema Video-to-Text: R@1: 44.7 - R@5: 68.2 - R@10: 74.5 - R@50: 87.8 - Median R: 2.0 - Mean R: 14.3
+[2023-11-09 01:35:23,726 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:35:23,727 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:35:23,728 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:44:29,102 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:44:29,102 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:44:29,102 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:44:29,103 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:44:29,104 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:44:40,383 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:44:40,383 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:44:40,383 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:44:40,749 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:44:40,749 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:44:41,962 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:44:41,962 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:44:41,963 tvr 641 INFO]: time profile: feat 545.4s match 11.28091s metrics 1.57936s
+[2023-11-09 01:44:41,963 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 74.9 - R@10: 83.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.0
+[2023-11-09 01:44:41,963 tvr 647 INFO]: Video-to-Text: R@1: 40.0 - R@5: 61.4 - R@10: 67.8 - R@50: 84.0 - Median R: 2.0 - Mean R: 18.5
+[2023-11-09 01:44:41,968 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:44:41,969 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:44:41,970 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 01:53:46,667 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 01:53:46,667 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 01:53:46,668 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 01:53:46,668 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 01:53:46,669 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 01:53:57,980 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 01:53:57,981 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 01:53:57,981 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 01:53:58,350 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 01:53:58,350 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 01:53:59,562 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 01:53:59,562 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 01:53:59,562 tvr 641 INFO]: time profile: feat 544.7s match 11.31364s metrics 1.58130s
+[2023-11-09 01:53:59,562 tvr 643 INFO]: ema Text-to-Video: R@1: 45.8 - R@5: 75.5 - R@10: 83.8 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 01:53:59,563 tvr 647 INFO]: ema Video-to-Text: R@1: 44.8 - R@5: 68.2 - R@10: 74.5 - R@50: 87.3 - Median R: 2.0 - Mean R: 14.5
+[2023-11-09 01:54:33,222 tvr 336 INFO]: eta: 4:00:30  epoch: 6/10  iteration: 2300/3810  time: 1.7901 (9.5566)  data: 0.1402 (7.9289)  loss: 0.3094 (0.4572)  discrimination_loss: 0.3094 (0.4572)  generation_loss: 0.0000 (0.0000)  lr: 0.000000010/0.000010238  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:56:01,574 tvr 336 INFO]: eta: 3:48:30  epoch: 6/10  iteration: 2350/3810  time: 1.7644 (9.3909)  data: 0.1420 (7.7633)  loss: 0.3011 (0.4538)  discrimination_loss: 0.3011 (0.4538)  generation_loss: 0.0000 (0.0000)  lr: 0.000000013/0.000012870  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:57:30,237 tvr 336 INFO]: eta: 3:36:57  epoch: 6/10  iteration: 2400/3810  time: 1.7636 (9.2322)  data: 0.1427 (7.6046)  loss: 0.2830 (0.4506)  discrimination_loss: 0.2830 (0.4506)  generation_loss: 0.0000 (0.0000)  lr: 0.000000016/0.000015755  logit_scale: 100.00max mem: 36413
+[2023-11-09 01:57:30,248 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 01:57:30,248 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 01:57:30,250 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 02:06:37,090 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 02:06:37,091 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 02:06:37,091 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 02:06:37,091 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 02:06:37,093 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 02:06:48,361 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 02:06:48,362 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 02:06:48,362 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 02:06:48,699 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 02:06:48,699 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 02:06:49,864 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 02:06:49,864 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 02:06:49,864 tvr 641 INFO]: time profile: feat 546.8s match 11.27077s metrics 1.50288s
+[2023-11-09 02:06:49,865 tvr 643 INFO]: Text-to-Video: R@1: 45.1 - R@5: 74.8 - R@10: 83.2 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.2
+[2023-11-09 02:06:49,865 tvr 647 INFO]: Video-to-Text: R@1: 39.0 - R@5: 61.7 - R@10: 68.5 - R@50: 86.4 - Median R: 2.0 - Mean R: 18.0
+[2023-11-09 02:06:49,871 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 02:06:49,871 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 02:06:49,872 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 02:15:54,840 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 02:15:54,840 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 02:15:54,840 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 02:15:54,840 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 02:15:54,842 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 02:16:06,134 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 02:16:06,135 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 02:16:06,135 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 02:16:06,481 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 02:16:06,482 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 02:16:07,662 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 02:16:07,662 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 02:16:07,662 tvr 641 INFO]: time profile: feat 545.0s match 11.29452s metrics 1.52791s
+[2023-11-09 02:16:07,663 tvr 643 INFO]: ema Text-to-Video: R@1: 45.7 - R@5: 75.4 - R@10: 83.8 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.5
+[2023-11-09 02:16:07,663 tvr 647 INFO]: ema Video-to-Text: R@1: 43.6 - R@5: 67.3 - R@10: 74.0 - R@50: 86.2 - Median R: 2.0 - Mean R: 15.7
+[2023-11-09 02:17:36,349 tvr 336 INFO]: eta: 3:36:09  epoch: 6/10  iteration: 2450/3810  time: 1.7724 (9.5360)  data: 0.1433 (7.9085)  loss: 0.3088 (0.4477)  discrimination_loss: 0.3088 (0.4477)  generation_loss: 0.0000 (0.0000)  lr: 0.000000019/0.000018872  logit_scale: 100.00max mem: 36413
+[2023-11-09 02:19:04,994 tvr 336 INFO]: eta: 3:24:48  epoch: 6/10  iteration: 2500/3810  time: 1.7720 (9.3808)  data: 0.1448 (7.7532)  loss: 0.2994 (0.4447)  discrimination_loss: 0.2994 (0.4447)  generation_loss: 0.0000 (0.0000)  lr: 0.000000022/0.000022200  logit_scale: 100.00max mem: 36413
+[2023-11-09 02:20:33,839 tvr 336 INFO]: eta: 3:13:51  epoch: 6/10  iteration: 2550/3810  time: 1.7709 (9.2317)  data: 0.1450 (7.6041)  loss: 0.2926 (0.4420)  discrimination_loss: 0.2926 (0.4420)  generation_loss: 0.0000 (0.0000)  lr: 0.000000026/0.000025717  logit_scale: 100.00max mem: 36413
+[2023-11-09 02:20:33,843 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 02:20:33,843 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 02:20:33,844 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 02:29:43,248 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 02:29:43,248 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 02:29:43,248 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 02:29:43,248 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 02:29:43,250 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 02:29:54,570 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 02:29:54,570 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 02:29:54,570 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 02:29:54,934 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 02:29:54,934 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 02:29:56,135 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 02:29:56,135 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 02:29:56,135 tvr 641 INFO]: time profile: feat 549.4s match 11.32242s metrics 1.56494s
+[2023-11-09 02:29:56,136 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.4 - R@10: 83.1 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.4
+[2023-11-09 02:29:56,136 tvr 647 INFO]: Video-to-Text: R@1: 37.9 - R@5: 61.5 - R@10: 68.2 - R@50: 83.9 - Median R: 3.0 - Mean R: 18.8
+[2023-11-09 02:29:56,142 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 02:29:56,142 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 02:29:56,143 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 02:39:02,967 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 02:39:02,967 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 02:39:02,967 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 02:39:02,968 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 02:39:02,970 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 02:39:14,215 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 02:39:14,216 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 02:39:14,216 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 02:39:14,555 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 02:39:14,555 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 02:39:15,732 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 02:39:15,733 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 02:39:15,733 tvr 641 INFO]: time profile: feat 546.8s match 11.24839s metrics 1.51702s
+[2023-11-09 02:39:15,733 tvr 643 INFO]: ema Text-to-Video: R@1: 45.7 - R@5: 75.2 - R@10: 83.7 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 02:39:15,733 tvr 647 INFO]: ema Video-to-Text: R@1: 45.5 - R@5: 70.3 - R@10: 75.8 - R@50: 89.2 - Median R: 2.0 - Mean R: 13.4
+[2023-11-09 02:40:44,361 tvr 336 INFO]: eta: 3:11:58  epoch: 6/10  iteration: 2600/3810  time: 1.7691 (9.5197)  data: 0.1416 (7.8921)  loss: 0.2812 (0.4396)  discrimination_loss: 0.2812 (0.4396)  generation_loss: 0.0000 (0.0000)  lr: 0.000000029/0.000029400  logit_scale: 100.00max mem: 36413
+[2023-11-09 02:42:13,200 tvr 336 INFO]: eta: 3:01:13  epoch: 6/10  iteration: 2650/3810  time: 1.7651 (9.3736)  data: 0.1403 (7.7460)  loss: 0.3089 (0.4375)  discrimination_loss: 0.3089 (0.4375)  generation_loss: 0.0000 (0.0000)  lr: 0.000000033/0.000033222  logit_scale: 100.00max mem: 36413
+[2023-11-09 02:42:42,923 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 02:42:42,923 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 02:42:42,924 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 02:51:51,450 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 02:51:51,451 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 02:51:51,451 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 02:51:51,451 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 02:51:51,453 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 02:52:02,945 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 02:52:02,946 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 02:52:02,946 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 02:52:03,311 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 02:52:03,311 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 02:52:04,527 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 02:52:04,527 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 02:52:04,527 tvr 641 INFO]: time profile: feat 548.5s match 11.49480s metrics 1.58166s
+[2023-11-09 02:52:04,527 tvr 643 INFO]: Text-to-Video: R@1: 45.2 - R@5: 74.9 - R@10: 83.4 - R@50: 93.8 - Median R: 2.0 - Mean R: 17.2
+[2023-11-09 02:52:04,527 tvr 647 INFO]: Video-to-Text: R@1: 38.0 - R@5: 61.9 - R@10: 69.1 - R@50: 77.3 - Median R: 2.0 - Mean R: 21.3
+[2023-11-09 02:52:04,533 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 02:52:04,534 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 02:52:04,535 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:01:13,260 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:01:13,260 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:01:13,260 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:01:13,260 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:01:13,262 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:01:24,769 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:01:24,770 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:01:24,770 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:01:25,142 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:01:25,142 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:01:26,366 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:01:26,366 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:01:26,366 tvr 641 INFO]: time profile: feat 548.7s match 11.50946s metrics 1.59621s
+[2023-11-09 03:01:26,366 tvr 643 INFO]: ema Text-to-Video: R@1: 45.9 - R@5: 75.2 - R@10: 83.7 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 03:01:26,366 tvr 647 INFO]: ema Video-to-Text: R@1: 48.7 - R@5: 74.7 - R@10: 81.3 - R@50: 93.7 - Median R: 2.0 - Mean R: 10.4
+[2023-11-09 03:02:34,149 tvr 336 INFO]: eta: 2:50:51  epoch: 7/10  iteration: 2700/3810  time: 1.7687 (9.2359)  data: 0.1458 (7.6083)  loss: 0.2947 (0.4354)  discrimination_loss: 0.2947 (0.4354)  generation_loss: 0.0000 (0.0000)  lr: 0.000000037/0.000037159  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:02:34,154 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:02:34,155 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:02:34,156 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:11:40,309 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:11:40,309 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:11:40,309 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:11:40,309 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:11:40,311 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:11:51,629 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:11:51,630 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:11:51,630 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:11:51,979 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:11:51,979 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:11:53,172 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:11:53,172 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:11:53,172 tvr 641 INFO]: time profile: feat 546.2s match 11.32062s metrics 1.54257s
+[2023-11-09 03:11:53,172 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.7 - R@10: 83.1 - R@50: 93.8 - Median R: 2.0 - Mean R: 17.3
+[2023-11-09 03:11:53,172 tvr 647 INFO]: Video-to-Text: R@1: 36.6 - R@5: 59.6 - R@10: 65.2 - R@50: 84.8 - Median R: 3.0 - Mean R: 18.6
+[2023-11-09 03:11:53,179 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:11:53,179 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:11:53,180 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:21:00,798 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:21:00,798 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:21:00,798 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:21:00,798 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:21:00,800 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:21:12,172 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:21:12,172 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:21:12,173 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:21:12,505 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:21:12,506 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:21:13,662 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:21:13,663 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:21:13,663 tvr 641 INFO]: time profile: feat 547.6s match 11.37435s metrics 1.49045s
+[2023-11-09 03:21:13,663 tvr 643 INFO]: ema Text-to-Video: R@1: 45.8 - R@5: 75.3 - R@10: 83.8 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 03:21:13,663 tvr 647 INFO]: ema Video-to-Text: R@1: 50.0 - R@5: 76.5 - R@10: 82.7 - R@50: 93.5 - Median R: 1.5 - Mean R: 10.1
+[2023-11-09 03:22:42,412 tvr 336 INFO]: eta: 2:47:57  epoch: 7/10  iteration: 2750/3810  time: 1.7909 (9.5074)  data: 0.1479 (7.8797)  loss: 0.3088 (0.4332)  discrimination_loss: 0.3088 (0.4332)  generation_loss: 0.0000 (0.0000)  lr: 0.000000041/0.000041182  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:24:11,125 tvr 336 INFO]: eta: 2:37:42  epoch: 7/10  iteration: 2800/3810  time: 1.7718 (9.3693)  data: 0.1440 (7.7416)  loss: 0.3253 (0.4308)  discrimination_loss: 0.3253 (0.4308)  generation_loss: 0.0000 (0.0000)  lr: 0.000000045/0.000045266  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:25:39,766 tvr 336 INFO]: eta: 2:27:46  epoch: 7/10  iteration: 2850/3810  time: 1.7667 (9.2360)  data: 0.1408 (7.6083)  loss: 0.3276 (0.4288)  discrimination_loss: 0.3276 (0.4288)  generation_loss: 0.0000 (0.0000)  lr: 0.000000049/0.000049382  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:25:39,770 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:25:39,771 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:25:39,771 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:34:45,478 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:34:45,478 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:34:45,478 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:34:45,478 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:34:45,480 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:34:56,858 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:34:56,859 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:34:56,859 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:34:57,210 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:34:57,211 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:34:58,388 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:34:58,388 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:34:58,388 tvr 641 INFO]: time profile: feat 545.7s match 11.38080s metrics 1.52939s
+[2023-11-09 03:34:58,388 tvr 643 INFO]: Text-to-Video: R@1: 44.5 - R@5: 74.1 - R@10: 82.5 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.6
+[2023-11-09 03:34:58,388 tvr 647 INFO]: Video-to-Text: R@1: 40.7 - R@5: 63.8 - R@10: 70.9 - R@50: 80.6 - Median R: 2.0 - Mean R: 19.9
+[2023-11-09 03:34:58,394 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:34:58,394 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:34:58,395 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:44:04,859 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:44:04,859 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:44:04,859 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:44:04,860 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:44:04,862 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:44:16,386 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:44:16,387 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:44:16,387 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:44:16,718 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:44:16,718 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:44:17,886 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:44:17,887 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:44:17,887 tvr 641 INFO]: time profile: feat 546.5s match 11.52758s metrics 1.49982s
+[2023-11-09 03:44:17,887 tvr 643 INFO]: ema Text-to-Video: R@1: 45.7 - R@5: 75.3 - R@10: 83.6 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 03:44:17,887 tvr 647 INFO]: ema Video-to-Text: R@1: 49.2 - R@5: 76.1 - R@10: 82.7 - R@50: 93.3 - Median R: 2.0 - Mean R: 10.0
+[2023-11-09 03:45:46,629 tvr 336 INFO]: eta: 2:23:58  epoch: 7/10  iteration: 2900/3810  time: 1.7695 (9.4929)  data: 0.1418 (7.8652)  loss: 0.3513 (0.4273)  discrimination_loss: 0.3513 (0.4273)  generation_loss: 0.0000 (0.0000)  lr: 0.000000054/0.000053502  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:47:15,314 tvr 336 INFO]: eta: 2:14:11  epoch: 7/10  iteration: 2950/3810  time: 1.7670 (9.3621)  data: 0.1416 (7.7344)  loss: 0.3262 (0.4258)  discrimination_loss: 0.3262 (0.4258)  generation_loss: 0.0000 (0.0000)  lr: 0.000000058/0.000057598  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:48:44,193 tvr 336 INFO]: eta: 2:04:40  epoch: 7/10  iteration: 3000/3810  time: 1.7829 (9.2357)  data: 0.1436 (7.6079)  loss: 0.3524 (0.4244)  discrimination_loss: 0.3524 (0.4244)  generation_loss: 0.0000 (0.0000)  lr: 0.000000062/0.000061642  logit_scale: 100.00max mem: 36413
+[2023-11-09 03:48:44,197 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:48:44,197 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:48:44,198 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 03:57:49,926 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 03:57:49,927 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 03:57:49,927 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 03:57:49,927 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 03:57:49,929 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 03:58:01,293 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 03:58:01,293 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 03:58:01,294 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 03:58:01,640 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 03:58:01,641 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 03:58:02,825 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 03:58:02,825 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 03:58:02,825 tvr 641 INFO]: time profile: feat 545.7s match 11.36698s metrics 1.53193s
+[2023-11-09 03:58:02,826 tvr 643 INFO]: Text-to-Video: R@1: 44.6 - R@5: 74.3 - R@10: 82.6 - R@50: 93.5 - Median R: 2.0 - Mean R: 17.5
+[2023-11-09 03:58:02,826 tvr 647 INFO]: Video-to-Text: R@1: 44.1 - R@5: 66.7 - R@10: 74.0 - R@50: 90.1 - Median R: 2.0 - Mean R: 13.7
+[2023-11-09 03:58:02,831 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 03:58:02,832 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 03:58:02,832 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 04:07:10,614 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 04:07:10,614 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 04:07:10,614 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 04:07:10,615 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 04:07:10,617 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 04:07:21,959 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 04:07:21,959 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 04:07:21,959 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 04:07:22,300 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 04:07:22,301 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 04:07:23,467 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 04:07:23,467 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 04:07:23,467 tvr 641 INFO]: time profile: feat 547.8s match 11.34497s metrics 1.50802s
+[2023-11-09 04:07:23,467 tvr 643 INFO]: ema Text-to-Video: R@1: 45.7 - R@5: 75.4 - R@10: 83.4 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 04:07:23,468 tvr 647 INFO]: ema Video-to-Text: R@1: 48.2 - R@5: 74.8 - R@10: 80.1 - R@50: 92.0 - Median R: 2.0 - Mean R: 10.9
+[2023-11-09 04:08:47,838 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 04:08:47,838 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 04:08:47,839 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 04:17:54,189 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 04:17:54,190 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 04:17:54,190 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 04:17:54,190 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 04:17:54,192 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 04:18:05,537 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 04:18:05,538 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 04:18:05,538 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 04:18:05,903 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 04:18:05,904 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 04:18:07,118 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 04:18:07,118 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 04:18:07,118 tvr 641 INFO]: time profile: feat 546.4s match 11.34803s metrics 1.58011s
+[2023-11-09 04:18:07,118 tvr 643 INFO]: Text-to-Video: R@1: 44.8 - R@5: 74.7 - R@10: 82.8 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.4
+[2023-11-09 04:18:07,118 tvr 647 INFO]: Video-to-Text: R@1: 42.1 - R@5: 65.6 - R@10: 71.3 - R@50: 85.2 - Median R: 2.0 - Mean R: 17.2
+[2023-11-09 04:18:07,124 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 04:18:07,124 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 04:18:07,125 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 04:27:14,034 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 04:27:14,035 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 04:27:14,035 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 04:27:14,035 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 04:27:14,037 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 04:27:25,374 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 04:27:25,375 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 04:27:25,375 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 04:27:25,739 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 04:27:25,740 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 04:27:26,953 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 04:27:26,954 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 04:27:26,954 tvr 641 INFO]: time profile: feat 546.9s match 11.34001s metrics 1.57907s
+[2023-11-09 04:27:26,954 tvr 643 INFO]: ema Text-to-Video: R@1: 45.8 - R@5: 75.4 - R@10: 83.5 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 04:27:26,954 tvr 647 INFO]: ema Video-to-Text: R@1: 48.8 - R@5: 74.0 - R@10: 80.4 - R@50: 93.0 - Median R: 2.0 - Mean R: 10.1
+[2023-11-09 04:27:39,001 tvr 336 INFO]: eta: 2:00:06  epoch: 8/10  iteration: 3050/3810  time: 1.6991 (9.4827)  data: 0.1276 (7.8551)  loss: 0.3662 (0.4234)  discrimination_loss: 0.3662 (0.4234)  generation_loss: 0.0000 (0.0000)  lr: 0.000000066/0.000065608  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:29:07,972 tvr 336 INFO]: eta: 1:50:44  epoch: 8/10  iteration: 3100/3810  time: 1.7732 (9.3584)  data: 0.1446 (7.7307)  loss: 0.3245 (0.4216)  discrimination_loss: 0.3245 (0.4216)  generation_loss: 0.0000 (0.0000)  lr: 0.000000069/0.000069467  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:30:36,657 tvr 336 INFO]: eta: 1:41:37  epoch: 8/10  iteration: 3150/3810  time: 1.7732 (9.2380)  data: 0.1390 (7.6103)  loss: 0.2936 (0.4204)  discrimination_loss: 0.2936 (0.4204)  generation_loss: 0.0000 (0.0000)  lr: 0.000000073/0.000073194  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:30:36,662 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 04:30:36,662 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 04:30:36,663 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 04:39:42,985 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 04:39:42,986 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 04:39:42,986 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 04:39:42,986 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 04:39:42,988 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 04:39:54,307 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 04:39:54,307 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 04:39:54,308 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 04:39:54,660 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 04:39:54,661 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 04:39:55,852 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 04:39:55,852 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 04:39:55,853 tvr 641 INFO]: time profile: feat 546.3s match 11.32170s metrics 1.54516s
+[2023-11-09 04:39:55,853 tvr 643 INFO]: Text-to-Video: R@1: 45.0 - R@5: 74.2 - R@10: 82.7 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.1
+[2023-11-09 04:39:55,853 tvr 647 INFO]: Video-to-Text: R@1: 43.1 - R@5: 71.2 - R@10: 78.1 - R@50: 92.5 - Median R: 2.0 - Mean R: 12.3
+[2023-11-09 04:39:55,858 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 04:39:55,859 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 04:39:55,859 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 04:49:00,802 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 04:49:00,802 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 04:49:00,802 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 04:49:00,802 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 04:49:00,805 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 04:49:12,188 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 04:49:12,189 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 04:49:12,189 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 04:49:12,526 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 04:49:12,527 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 04:49:13,697 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 04:49:13,697 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 04:49:13,697 tvr 641 INFO]: time profile: feat 544.9s match 11.38690s metrics 1.50801s
+[2023-11-09 04:49:13,697 tvr 643 INFO]: ema Text-to-Video: R@1: 46.0 - R@5: 75.3 - R@10: 83.4 - R@50: 93.9 - Median R: 2.0 - Mean R: 16.6
+[2023-11-09 04:49:13,697 tvr 647 INFO]: ema Video-to-Text: R@1: 52.7 - R@5: 80.1 - R@10: 87.2 - R@50: 96.3 - Median R: 1.0 - Mean R: 6.6
+[2023-11-09 04:50:42,013 tvr 336 INFO]: eta: 1:36:16  epoch: 8/10  iteration: 3200/3810  time: 1.7728 (9.4704)  data: 0.1406 (7.8427)  loss: 0.3399 (0.4193)  discrimination_loss: 0.3399 (0.4193)  generation_loss: 0.0000 (0.0000)  lr: 0.000000077/0.000076763  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:52:11,260 tvr 336 INFO]: eta: 1:27:17  epoch: 8/10  iteration: 3250/3810  time: 1.7848 (9.3521)  data: 0.1493 (7.7243)  loss: 0.3265 (0.4181)  discrimination_loss: 0.3265 (0.4181)  generation_loss: 0.0000 (0.0000)  lr: 0.000000080/0.000080151  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:53:40,051 tvr 336 INFO]: eta: 1:18:31  epoch: 8/10  iteration: 3300/3810  time: 1.7668 (9.2373)  data: 0.1447 (7.6095)  loss: 0.3821 (0.4173)  discrimination_loss: 0.3821 (0.4173)  generation_loss: 0.0000 (0.0000)  lr: 0.000000083/0.000083334  logit_scale: 100.00max mem: 36413
+[2023-11-09 04:53:40,056 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 04:53:40,056 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 04:53:40,057 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:02:47,951 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:02:47,952 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:02:47,952 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:02:47,952 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:02:47,954 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:02:59,246 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:02:59,247 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:02:59,247 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:02:59,601 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:02:59,602 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:03:00,810 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:03:00,810 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:03:00,810 tvr 641 INFO]: time profile: feat 547.9s match 11.29492s metrics 1.56327s
+[2023-11-09 05:03:00,810 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.5 - R@10: 83.0 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.3
+[2023-11-09 05:03:00,810 tvr 647 INFO]: Video-to-Text: R@1: 43.7 - R@5: 69.4 - R@10: 75.6 - R@50: 91.4 - Median R: 2.0 - Mean R: 12.5
+[2023-11-09 05:03:00,819 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:03:00,819 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:03:00,820 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:12:08,560 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:12:08,561 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:12:08,561 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:12:08,561 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:12:08,563 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:12:19,865 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:12:19,865 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:12:19,865 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:12:20,210 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:12:20,211 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:12:21,396 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:12:21,396 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:12:21,396 tvr 641 INFO]: time profile: feat 547.7s match 11.30459s metrics 1.53089s
+[2023-11-09 05:12:21,396 tvr 643 INFO]: ema Text-to-Video: R@1: 45.7 - R@5: 75.5 - R@10: 83.6 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.5
+[2023-11-09 05:12:21,396 tvr 647 INFO]: ema Video-to-Text: R@1: 53.5 - R@5: 82.8 - R@10: 90.9 - R@50: 98.0 - Median R: 1.0 - Mean R: 5.3
+[2023-11-09 05:13:50,011 tvr 336 INFO]: eta: 1:12:31  epoch: 8/10  iteration: 3350/3810  time: 1.7776 (9.4606)  data: 0.1437 (7.8328)  loss: 0.3914 (0.4167)  discrimination_loss: 0.3914 (0.4167)  generation_loss: 0.0000 (0.0000)  lr: 0.000000086/0.000086290  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:15:18,537 tvr 336 INFO]: eta: 1:03:52  epoch: 8/10  iteration: 3400/3810  time: 1.7654 (9.3475)  data: 0.1423 (7.7198)  loss: 0.3798 (0.4162)  discrimination_loss: 0.3798 (0.4162)  generation_loss: 0.0000 (0.0000)  lr: 0.000000089/0.000089000  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:16:09,520 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:16:09,520 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:16:09,521 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:25:16,613 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:25:16,614 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:25:16,614 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:25:16,614 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:25:16,616 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:25:27,965 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:25:27,965 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:25:27,965 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:25:28,323 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:25:28,324 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:25:29,528 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:25:29,528 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:25:29,528 tvr 641 INFO]: time profile: feat 547.1s match 11.35160s metrics 1.56289s
+[2023-11-09 05:25:29,528 tvr 643 INFO]: Text-to-Video: R@1: 44.6 - R@5: 74.2 - R@10: 82.7 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.2
+[2023-11-09 05:25:29,528 tvr 647 INFO]: Video-to-Text: R@1: 50.1 - R@5: 79.1 - R@10: 84.8 - R@50: 96.4 - Median R: 1.0 - Mean R: 7.8
+[2023-11-09 05:25:29,534 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:25:29,534 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:25:29,535 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:34:38,201 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:34:38,201 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:34:38,201 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:34:38,201 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:34:38,204 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:34:49,560 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:34:49,561 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:34:49,561 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:34:49,917 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:34:49,918 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:34:51,156 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:34:51,156 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:34:51,156 tvr 641 INFO]: time profile: feat 548.7s match 11.35984s metrics 1.59535s
+[2023-11-09 05:34:51,157 tvr 643 INFO]: ema Text-to-Video: R@1: 46.2 - R@5: 75.7 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 05:34:51,157 tvr 647 INFO]: ema Video-to-Text: R@1: 54.5 - R@5: 81.3 - R@10: 89.8 - R@50: 97.4 - Median R: 1.0 - Mean R: 5.8
+[2023-11-09 05:35:38,017 tvr 336 INFO]: eta: 0:55:26  epoch: 9/10  iteration: 3450/3810  time: 1.7856 (9.2402)  data: 0.1468 (7.6126)  loss: 0.3298 (0.4157)  discrimination_loss: 0.3298 (0.4157)  generation_loss: 0.0000 (0.0000)  lr: 0.000000091/0.000091444  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:35:38,021 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:35:38,022 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:35:38,023 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:44:46,135 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:44:46,136 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:44:46,136 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:44:46,136 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:44:46,139 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:44:57,472 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:44:57,473 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:44:57,473 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:44:57,828 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:44:57,829 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:44:59,012 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:44:59,012 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:44:59,012 tvr 641 INFO]: time profile: feat 548.1s match 11.33705s metrics 1.53962s
+[2023-11-09 05:44:59,013 tvr 643 INFO]: Text-to-Video: R@1: 44.0 - R@5: 73.9 - R@10: 82.4 - R@50: 93.4 - Median R: 2.0 - Mean R: 17.6
+[2023-11-09 05:44:59,013 tvr 647 INFO]: Video-to-Text: R@1: 43.2 - R@5: 69.5 - R@10: 76.3 - R@50: 90.6 - Median R: 2.0 - Mean R: 12.5
+[2023-11-09 05:44:59,019 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:44:59,019 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:44:59,020 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 05:54:05,302 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 05:54:05,302 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 05:54:05,302 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 05:54:05,302 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 05:54:05,304 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 05:54:16,626 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 05:54:16,627 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 05:54:16,627 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 05:54:16,985 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 05:54:16,985 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 05:54:18,181 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 05:54:18,182 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 05:54:18,182 tvr 641 INFO]: time profile: feat 546.3s match 11.32454s metrics 1.55507s
+[2023-11-09 05:54:18,182 tvr 643 INFO]: ema Text-to-Video: R@1: 46.2 - R@5: 75.7 - R@10: 83.9 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.4
+[2023-11-09 05:54:18,182 tvr 647 INFO]: ema Video-to-Text: R@1: 56.2 - R@5: 82.2 - R@10: 90.6 - R@50: 97.4 - Median R: 1.0 - Mean R: 5.7
+[2023-11-09 05:55:46,965 tvr 336 INFO]: eta: 0:48:50  epoch: 9/10  iteration: 3500/3810  time: 1.7761 (9.4537)  data: 0.1450 (7.8260)  loss: 0.3557 (0.4147)  discrimination_loss: 0.3557 (0.4147)  generation_loss: 0.0000 (0.0000)  lr: 0.000000094/0.000093607  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:57:15,968 tvr 336 INFO]: eta: 0:40:29  epoch: 9/10  iteration: 3550/3810  time: 1.7764 (9.3456)  data: 0.1397 (7.7178)  loss: 0.3410 (0.4138)  discrimination_loss: 0.3410 (0.4138)  generation_loss: 0.0000 (0.0000)  lr: 0.000000095/0.000095474  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:58:44,816 tvr 336 INFO]: eta: 0:32:20  epoch: 9/10  iteration: 3600/3810  time: 1.7706 (9.2405)  data: 0.1387 (7.6126)  loss: 0.3487 (0.4132)  discrimination_loss: 0.3487 (0.4132)  generation_loss: 0.0000 (0.0000)  lr: 0.000000097/0.000097031  logit_scale: 100.00max mem: 36413
+[2023-11-09 05:58:44,821 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 05:58:44,821 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 05:58:44,822 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 06:07:50,932 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 06:07:50,932 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 06:07:50,932 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 06:07:50,932 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 06:07:50,935 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 06:08:02,231 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 06:08:02,232 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 06:08:02,232 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 06:08:02,576 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 06:08:02,577 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 06:08:03,747 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 06:08:03,748 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 06:08:03,748 tvr 641 INFO]: time profile: feat 546.1s match 11.29943s metrics 1.51604s
+[2023-11-09 06:08:03,748 tvr 643 INFO]: Text-to-Video: R@1: 44.7 - R@5: 73.8 - R@10: 82.3 - R@50: 93.6 - Median R: 2.0 - Mean R: 17.6
+[2023-11-09 06:08:03,748 tvr 647 INFO]: Video-to-Text: R@1: 46.4 - R@5: 68.7 - R@10: 76.7 - R@50: 84.2 - Median R: 2.0 - Mean R: 15.2
+[2023-11-09 06:08:03,754 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 06:08:03,754 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 06:08:03,755 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 06:17:08,846 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 06:17:08,846 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 06:17:08,846 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 06:17:08,846 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 06:17:08,849 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 06:17:20,127 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 06:17:20,127 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 06:17:20,128 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 06:17:20,475 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 06:17:20,475 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 06:17:21,661 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 06:17:21,661 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 06:17:21,661 tvr 641 INFO]: time profile: feat 545.1s match 11.28121s metrics 1.53378s
+[2023-11-09 06:17:21,661 tvr 643 INFO]: ema Text-to-Video: R@1: 46.1 - R@5: 75.6 - R@10: 83.7 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.5
+[2023-11-09 06:17:21,661 tvr 647 INFO]: ema Video-to-Text: R@1: 53.8 - R@5: 82.9 - R@10: 91.1 - R@50: 98.3 - Median R: 1.0 - Mean R: 4.9
+[2023-11-09 06:18:50,414 tvr 336 INFO]: eta: 0:25:11  epoch: 9/10  iteration: 3650/3810  time: 1.7785 (9.4442)  data: 0.1459 (7.8164)  loss: 0.3784 (0.4127)  discrimination_loss: 0.3784 (0.4127)  generation_loss: 0.0000 (0.0000)  lr: 0.000000098/0.000098270  logit_scale: 100.00max mem: 36413
+[2023-11-09 06:20:19,398 tvr 336 INFO]: eta: 0:17:07  epoch: 9/10  iteration: 3700/3810  time: 1.7760 (9.3406)  data: 0.1438 (7.7127)  loss: 0.3577 (0.4123)  discrimination_loss: 0.3577 (0.4123)  generation_loss: 0.0000 (0.0000)  lr: 0.000000099/0.000099180  logit_scale: 100.00max mem: 36413
+[2023-11-09 06:21:48,326 tvr 336 INFO]: eta: 0:09:14  epoch: 9/10  iteration: 3750/3810  time: 1.7843 (9.2398)  data: 0.1490 (7.6119)  loss: 0.3460 (0.4118)  discrimination_loss: 0.3460 (0.4118)  generation_loss: 0.0000 (0.0000)  lr: 0.000000100/0.000099755  logit_scale: 100.00max mem: 36413
+[2023-11-09 06:21:48,331 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 06:21:48,331 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 06:21:48,332 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 06:30:54,113 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 06:30:54,113 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 06:30:54,113 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 06:30:54,113 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 06:30:54,115 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 06:31:05,395 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 06:31:05,396 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 06:31:05,396 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 06:31:05,732 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 06:31:05,732 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 06:31:06,889 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 06:31:06,889 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 06:31:06,889 tvr 641 INFO]: time profile: feat 545.8s match 11.28268s metrics 1.49335s
+[2023-11-09 06:31:06,889 tvr 643 INFO]: Text-to-Video: R@1: 44.5 - R@5: 74.0 - R@10: 82.3 - R@50: 93.4 - Median R: 2.0 - Mean R: 17.6
+[2023-11-09 06:31:06,889 tvr 647 INFO]: Video-to-Text: R@1: 46.6 - R@5: 72.5 - R@10: 78.3 - R@50: 89.9 - Median R: 2.0 - Mean R: 12.4
+[2023-11-09 06:31:06,895 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 06:31:06,896 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 06:31:06,896 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 06:40:12,273 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 06:40:12,274 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 06:40:12,274 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 06:40:12,274 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 06:40:12,276 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 06:40:23,517 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 06:40:23,526 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 06:40:23,526 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 06:40:23,871 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 06:40:23,872 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 06:40:25,038 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 06:40:25,038 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 06:40:25,039 tvr 641 INFO]: time profile: feat 545.4s match 11.25223s metrics 1.51272s
+[2023-11-09 06:40:25,039 tvr 643 INFO]: ema Text-to-Video: R@1: 46.2 - R@5: 75.8 - R@10: 83.8 - R@50: 94.0 - Median R: 2.0 - Mean R: 16.5
+[2023-11-09 06:40:25,039 tvr 647 INFO]: ema Video-to-Text: R@1: 54.9 - R@5: 81.8 - R@10: 89.4 - R@50: 96.9 - Median R: 1.0 - Mean R: 6.3
+[2023-11-09 06:41:53,533 tvr 336 INFO]: eta: 0:01:34  epoch: 9/10  iteration: 3800/3810  time: 1.7758 (9.4354)  data: 0.1435 (7.8075)  loss: 0.3783 (0.4113)  discrimination_loss: 0.3783 (0.4113)  generation_loss: 0.0000 (0.0000)  lr: 0.000000100/0.000099993  logit_scale: 100.00max mem: 36413
+[2023-11-09 06:42:10,909 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 06:42:10,909 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 06:42:10,910 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 06:51:18,010 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 06:51:18,010 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 06:51:18,010 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 06:51:18,010 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 06:51:18,013 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 06:51:29,344 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 06:51:29,344 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 06:51:29,344 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 06:51:29,704 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 06:51:29,705 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 06:51:30,927 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 06:51:30,927 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 06:51:30,927 tvr 641 INFO]: time profile: feat 547.1s match 11.33401s metrics 1.58292s
+[2023-11-09 06:51:30,927 tvr 643 INFO]: Text-to-Video: R@1: 44.9 - R@5: 74.6 - R@10: 82.8 - R@50: 93.7 - Median R: 2.0 - Mean R: 17.4
+[2023-11-09 06:51:30,927 tvr 647 INFO]: Video-to-Text: R@1: 44.5 - R@5: 69.7 - R@10: 78.0 - R@50: 91.3 - Median R: 2.0 - Mean R: 12.3
+[2023-11-09 06:51:30,933 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 06:51:30,933 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 06:51:30,934 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 07:00:38,472 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 07:00:38,472 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 07:00:38,472 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 07:00:38,472 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 07:00:38,474 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 07:00:49,993 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 07:00:49,993 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 07:00:49,994 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 07:00:50,359 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 07:00:50,360 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 07:00:51,580 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 07:00:51,580 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 07:00:51,580 tvr 641 INFO]: time profile: feat 547.5s match 11.52154s metrics 1.58673s
+[2023-11-09 07:00:51,580 tvr 643 INFO]: ema Text-to-Video: R@1: 46.3 - R@5: 76.0 - R@10: 83.7 - R@50: 94.1 - Median R: 2.0 - Mean R: 16.5
+[2023-11-09 07:00:51,580 tvr 647 INFO]: ema Video-to-Text: R@1: 53.5 - R@5: 80.2 - R@10: 87.2 - R@50: 95.3 - Median R: 1.0 - Mean R: 7.5
+[2023-11-09 07:00:51,644 tvr 733 INFO]: ********************
+training finished with 13h 04min 21s********************
+
+[2023-11-09 07:00:51,939 tvr 510 WARNING]: Eval under the multi-sentence per video clip setting.
+[2023-11-09 07:00:51,939 tvr 511 WARNING]: sentence num: 27763, video num: 670
+[2023-11-09 07:00:51,940 tvr 524 INFO]: [start] extract text+video feature
+[2023-11-09 07:09:59,422 tvr 558 INFO]: [finish] extract text+video feature
+[2023-11-09 07:09:59,422 tvr 592 INFO]: 27763 670 27763 670
+[2023-11-09 07:09:59,422 tvr 596 INFO]: [start] calculate the similarity
+[2023-11-09 07:09:59,422 tvr 387 INFO]: [finish] map to main gpu
+[2023-11-09 07:09:59,425 tvr 396 INFO]: [finish] map to main gpu
+[2023-11-09 07:10:10,727 tvr 602 INFO]: [end] calculate the similarity
+[2023-11-09 07:10:10,728 tvr 605 INFO]: [start] compute_metrics
+[2023-11-09 07:10:10,728 tvr 608 INFO]: before reshape, sim matrix size: 27763 x 670
+[2023-11-09 07:10:11,090 tvr 622 INFO]: after reshape, new t2v matrix size: 670 x 81 x 670
+[2023-11-09 07:10:11,090 tvr 624 INFO]: after reshape, new v2t matrix size: 670 x 81 x 670
+[2023-11-09 07:10:12,287 tvr 636 INFO]: 	 Length-T: 27763, Length-V:670
+[2023-11-09 07:10:12,288 tvr 638 INFO]: [end] compute_metrics
+[2023-11-09 07:10:12,288 tvr 641 INFO]: time profile: feat 547.5s match 11.30521s metrics 1.56038s
+[2023-11-09 07:10:12,288 tvr 643 INFO]: Text-to-Video: R@1: 46.6 - R@5: 75.9 - R@10: 84.2 - R@50: 94.4 - Median R: 2.0 - Mean R: 15.7
+[2023-11-09 07:10:12,288 tvr 647 INFO]: Video-to-Text: R@1: 56.4 - R@5: 84.5 - R@10: 91.1 - R@50: 98.8 - Median R: 1.0 - Mean R: 4.6

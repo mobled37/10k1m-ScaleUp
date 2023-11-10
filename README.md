@@ -1,8 +1,8 @@
 <div align="center">
 
-# 【ICCV'2023 🔥】DiffusionRet: Generative Text-Video Retrieval with Diffusion Model
-[![Conference](http://img.shields.io/badge/ICCV-2023-FFD93D.svg)](https://iccv2023.thecvf.com/)
-[![Paper](http://img.shields.io/badge/Paper-arxiv.2303.09867-FF6B6B.svg)](https://arxiv.org/abs/2303.09867)
+# 【10k1m 🔥】 Vertical Domain Text-to-Video Retrieval
+<!-- [![Conference](http://img.shields.io/badge/ICCV-2023-FFD93D.svg)](https://iccv2023.thecvf.com/) -->
+[![DiffusionRet Paper](http://img.shields.io/badge/Paper-arxiv.2303.09867-FF6B6B.svg)](https://arxiv.org/abs/2303.09867)
 </div>
 
 The implementation of the paper [DiffusionRet: Generative Text-Video Retrieval with Diffusion Model](https://arxiv.org/abs/2303.09867).
@@ -10,7 +10,7 @@ The implementation of the paper [DiffusionRet: Generative Text-Video Retrieval w
 In this paper, we propose a novel diffusion-based text-video retrieval framework, called DiffusionRet, which addresses the limitations of current discriminative solutions
 from a generative perspective.
 
-## 📌 Citation
+<!-- ## 📌 Citation
 If you find this paper useful, please consider staring 🌟 this repo and citing 📑 our paper:
 ```
 @inproceedings{jin2023diffusionret,
@@ -20,7 +20,7 @@ If you find this paper useful, please consider staring 🌟 this repo and citing
   pages={2470-2481},
   year={2023}
 }
-```
+``` -->
 
 <!-- <details open><summary>💡 I also have other text-video retrieval projects that may interest you ✨. </summary><p>
 
@@ -91,7 +91,89 @@ wget https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702
 | MSR-VTT | [Download](https://drive.google.com/file/d/16eTeXS9EZnBWP8EcO00Jxi6ZwsIUUHW_/view?usp=sharing) | [Download](https://pan.baidu.com/s/1JVxwh5SxnE0rGcAe9dCP_g?pwd=3xzi) | [Download](https://disk.pku.edu.cn:443/link/989708CFB90C80B93F7297A5260F5582) |
 | ActivityNet | [Download](https://drive.google.com/file/d/1KcajRwDJMNxSWrlgLGHJ4nFtwgv0UWdc/view?usp=drive_link) | [Download](https://pan.baidu.com/s/1Nn-jUCJcydXhB01CNRvsfg?pwd=qsbd) | [Download](https://disk.pku.edu.cn:443/link/0E4384D13EA6E1693EF400FC27053033) |
 
+
 </div>
+
+## Vertical Domain Dataset Setup
+
+**supported video type**: mp4, avi
+
+```
+├── data
+│   ├── annotations
+│   │   ├── train_list.txt
+│   │   ├── val_list.txt
+│   │   ├── test_list.txt
+│   │   ├── raw_captions.pkl
+│   ├── videos
+│   │   ├── video1.avi
+│   │   ├── video2.avi
+│   │   ├── ...
+```
+
+```
+# train_list, val_list, test_list .txt format
+
+video_name1
+video_name2
+...
+
+# raw_captions.pkl format
+```
+
+### Case 1: One-sentence per video Pretrain
+
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+python -m torch.distributed.run \
+--master_port 2502 \
+--nproc_per_node=4 \
+main_retrieval.py \
+--do_train 1 \
+--workers 8 \
+--n_display 50 \
+--epochs 5 \
+--lr 1e-4 \
+--coef_lr 1e-3 \
+--batch_size 128 \
+--batch_size_val 128 \
+--anno_path data/MSR-VTT/anns \
+--video_path ${DATA_PATH}/MSRVTT_Videos \
+--datatype onesentence \
+--max_words 32 \
+--max_frames 12 \
+--video_framerate 1 \
+--stage discrimination \
+--output_dir ${OUTPUT_PATH}
+```
+
+### Case 2: Multi-sentences per video Pretrain
+
+```
+CUDA_VISIBLE_DEVICES=0,1,2,3 \
+python -m torch.distributed.run \
+--master_port 2502 \
+--nproc_per_node=4 \
+main_retrieval.py \
+--do_train 1 \
+--workers 8 \
+--n_display 50 \
+--epochs 5 \
+--lr 1e-4 \
+--coef_lr 1e-3 \
+--batch_size 128 \
+--batch_size_val 128 \
+--anno_path data/MSR-VTT/anns \
+--video_path ${DATA_PATH}/MSRVTT_Videos \
+--datatype multisentence \
+--max_words 32 \
+--max_frames 12 \
+--video_framerate 1 \
+--stage discrimination \
+--output_dir ${OUTPUT_PATH}
+```
+
+
 
 ### Evaluate
 #### Eval on MSR-VTT
@@ -115,7 +197,7 @@ eval.py \
 --output_dir ${OUTPUT_PATH}
 ```
 
-#### Eval on ActivityNet Captions
+<!-- #### Eval on ActivityNet Captions
 
 * we need to delete it!
 
@@ -137,7 +219,7 @@ eval.py \
 --noise_schedule cosine \
 --init_model ${CHECKPOINT_PATH} \
 --output_dir ${OUTPUT_PATH}
-```
+``` -->
 
 ### Train
 #### Discrimination Pretrain

@@ -2,3 +2,4 @@ wandb
 DiffusionRet/models/ViT-B-32.pt
 output
 *.pth
+*.ipynb

@@ -118,7 +118,29 @@ video_name1
 video_name2
 ...
 
+
 # raw_captions.pkl format
+# start_frame, end_frame = int
+# the # of captions == end_frame - start_frame
+
+# case 1: One-sentence per video
+
+{
+  f"{video_id}": ["caption1", "caption2", ... ],
+
+  "-8y1Q0rA3n8": [['a', 'man', 'with', 'a', 'sword', 'runs', 'ands', 'stabs', 'a', 'cardboard', 'target']],
+  ...
+}
+
+# case 2: Multi-sentence per video
+
+{
+  f"{video_id}_{start_frame}_{end_frame}": ["caption1", "caption2", ... , "caption{end_frame - start_frame}"],
+
+  "-8y1Q0rA3n8_95_102": [['a', 'man', 'with', 'a', 'sword', 'runs', 'ands', 'stabs', 'a', 'cardboard', 'target'], ['a', 'man', 'with', 'a', 'sword', 'stabs', 'a', 'target'], ['a', 'man', 'with', 'a', 'sword', 'stabs', 'a', 'target'], ['a', 'man', 'is', 'stabbing', 'a', 'cardboard', 'cutout', 'with', 'a', 'sword'], ['a', 'man', 'stuck', 'a', 'sword', 'through', 'a', 'piece', 'of', 'paper'], ['a', 'man', 'is', 'hitting', 'a', 'photo', 'with', 'his', 'sword'], ['a', 'man', 'is', 'demonstrating', 'a', 'sword'], ['a', 'man', 'is', 'stabbing', 'a', 'target'], ['someone', 'is', 'stabbing', 'a', 'poster', 'with', 'a', 'sword'], ['a', 'man', 'is', 'stabbing', 'a', 'silhouette', 'with', 'a', 'sword'], ['the', 'man', 'stabbed', 'the', 'picture', 'as', 'he', 'ran', 'by'], ['the', 'man', 'used', 'a', 'sword', 'stab', 'the', 'target'], ['a', 'person', 'stabs', 'a', 'photo', 'print', 'with', 'a', 'knife'], ['the', 'man', 'pierced', 'the', 'picture', 'with', 'a', 'sword', 'as', 'he', 'ran', 'by'], ['a', 'man', 'using', 'a', 'sword'], ['a', 'man', 'showing', 'a', 'sword', 'act'], ['a', 'man', 'puts', 'a', 'sword', 'into', 'a', 'target'], ['a', 'men', 'is', 'presenting', 'show'], ['the', 'boy', 'is', 'doing', 'the', 'something'], ['a', 'man', 'cutting', 'photo', 'with', 'a', 'sword'], ['a', 'man', 'is', 'running'], ['a', 'man', 'breaking', 'the', 'photo'], ['man', 'is', 'advertising', 'of', 'sward'], ['a', 'man', 'thrust', 'the', 'sword', 'in', 'a', 'cutout'], ['a', 'man', 'is', 'running', 'with', 'a', 'sword', 'then', 'stabbing', 'it', 'into', 'a', 'picture', 'of', 'an', 'asian', 'man'], ['the', 'man', 'stabbed', 'the', 'target', 'with', 'a', 'sword'], ['a', 'man', 'is', 'pionting', 'a', 'photo', 'with', 'a', 'swoard']],
+  ...
+}
+
 ```
 
 ### Case 1: One-sentence per video Pretrain

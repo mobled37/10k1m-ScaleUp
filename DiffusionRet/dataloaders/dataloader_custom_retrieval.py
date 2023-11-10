@@ -54,10 +54,17 @@ class CustomDataset(RetrievalDataset):
                 video_dict[video_id_] = file_path_
 
         for video_id in video_ids:
+            temp = []
             assert video_id in captions
             for cap in captions[video_id]:
                 cap_txt = " ".join(cap)
-                sentences_dict[len(sentences_dict)] = (video_id, (cap_txt, None, None))
+                temp.append(cap_txt)
+
+                if self.args.datatype == "multisentence":
+                    sentences_dict[len(sentences_dict)] = (video_id, (cap_txt, None, None))
+                else:
+                    if cap_txt not in temp:
+                        sentences_dict[len(sentences_dict)] = (video_id, (cap_txt, None, None)))
 
             if self.args.datatype == "multisentence":
                 self.cut_off_points.append(len(sentences_dict) - 1)
@@ -68,6 +75,7 @@ class CustomDataset(RetrievalDataset):
 
             if self.args.datatype == "multisentence":
                 assert len(self.cut_off_points) == self.video_num
+
             print("For {}, sentence number: {}".format(subset, self.sentence_num))
             print("For {}, video number: {}".format(subset, self.video_num))
 
